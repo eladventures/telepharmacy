@@ -8,4 +8,5 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'firebase',
   },
+  srcDir: './src',
 });
