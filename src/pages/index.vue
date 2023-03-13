@@ -16,37 +16,84 @@
   <div class="bg-white">
     <header>
       <Popover class="relative bg-white">
-        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+        <div
+          class="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
+        >
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span class="sr-only">Your Company</span>
-              <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/mark.svg?from-color=purple&from-shade=600&to-color=indigo&to-shade=600&toShade=600" alt="" />
+              <img
+                class="h-8 w-auto sm:h-10"
+                src="https://tailwindui.com/img/logos/mark.svg?from-color=purple&from-shade=600&to-color=indigo&to-shade=600&toShade=600"
+                alt=""
+              />
             </a>
           </div>
           <div class="-my-2 -mr-2 md:hidden">
-            <PopoverButton class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <PopoverButton
+              class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            >
               <span class="sr-only">Open menu</span>
               <Bars3Icon class="h-6 w-6" aria-hidden="true" />
             </PopoverButton>
           </div>
           <PopoverGroup as="nav" class="hidden space-x-10 md:flex">
             <Popover class="relative" v-slot="{ open }">
-              <PopoverButton :class="[open ? 'text-gray-900' : 'text-gray-500', 'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2']">
+              <PopoverButton
+                :class="[
+                  open ? 'text-gray-900' : 'text-gray-500',
+                  'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2',
+                ]"
+              >
                 <span>Solutions</span>
-                <ChevronDownIcon :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']" aria-hidden="true" />
+                <ChevronDownIcon
+                  :class="[
+                    open ? 'text-gray-600' : 'text-gray-400',
+                    'ml-2 h-5 w-5 group-hover:text-gray-500',
+                  ]"
+                  aria-hidden="true"
+                />
               </PopoverButton>
 
-              <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 translate-y-1" enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150" leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-1">
-                <PopoverPanel class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
-                  <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                    <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                      <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
-                        <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12">
-                          <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+              <transition
+                enter-active-class="transition ease-out duration-200"
+                enter-from-class="opacity-0 translate-y-1"
+                enter-to-class="opacity-100 translate-y-0"
+                leave-active-class="transition ease-in duration-150"
+                leave-from-class="opacity-100 translate-y-0"
+                leave-to-class="opacity-0 translate-y-1"
+              >
+                <PopoverPanel
+                  class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2"
+                >
+                  <div
+                    class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"
+                  >
+                    <div
+                      class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2"
+                    >
+                      <a
+                        v-for="item in solutions"
+                        :key="item.name"
+                        :href="item.href"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                      >
+                        <div
+                          class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
+                        >
+                          <component
+                            :is="item.icon"
+                            class="h-6 w-6"
+                            aria-hidden="true"
+                          />
                         </div>
                         <div class="ml-4">
-                          <p class="text-base font-medium text-gray-900">{{ item.name }}</p>
-                          <p class="mt-1 text-sm text-gray-500">{{ item.description }}</p>
+                          <p class="text-base font-medium text-gray-900">
+                            {{ item.name }}
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            {{ item.description }}
+                          </p>
                         </div>
                       </a>
                     </div>
@@ -55,26 +102,64 @@
               </transition>
             </Popover>
 
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Pricing</a>
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Partners</a>
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Company</a>
+            <a
+              href="#"
+              class="text-base font-medium text-gray-500 hover:text-gray-900"
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="text-base font-medium text-gray-500 hover:text-gray-900"
+              >Partners</a
+            >
+            <a
+              href="#"
+              class="text-base font-medium text-gray-500 hover:text-gray-900"
+              >Company</a
+            >
           </PopoverGroup>
           <div class="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
-            <a href="#" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700">Sign up</a>
+            <a
+              href="#"
+              class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+              >Sign in</a
+            >
+            <a
+              href="#"
+              class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
+              >Sign up</a
+            >
           </div>
         </div>
 
-        <transition enter-active-class="duration-200 ease-out" enter-from-class="opacity-0 scale-95" enter-to-class="opacity-100 scale-100" leave-active-class="duration-100 ease-in" leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
-          <PopoverPanel focus class="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden">
-            <div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+        <transition
+          enter-active-class="duration-200 ease-out"
+          enter-from-class="opacity-0 scale-95"
+          enter-to-class="opacity-100 scale-100"
+          leave-active-class="duration-100 ease-in"
+          leave-from-class="opacity-100 scale-100"
+          leave-to-class="opacity-0 scale-95"
+        >
+          <PopoverPanel
+            focus
+            class="absolute inset-x-0 top-0 z-30 origin-top-right transform p-2 transition md:hidden"
+          >
+            <div
+              class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+            >
               <div class="px-5 pt-5 pb-6">
                 <div class="flex items-center justify-between">
                   <div>
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?from-color=purple&from-shade=600&to-color=indigo&to-shade=600&toShade=600" alt="Your Company" />
+                    <img
+                      class="h-8 w-auto"
+                      src="https://tailwindui.com/img/logos/mark.svg?from-color=purple&from-shade=600&to-color=indigo&to-shade=600&toShade=600"
+                      alt="Your Company"
+                    />
                   </div>
                   <div class="-mr-2">
-                    <PopoverButton class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <PopoverButton
+                      class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                    >
                       <span class="sr-only">Close menu</span>
                       <XMarkIcon class="h-6 w-6" aria-hidden="true" />
                     </PopoverButton>
@@ -82,24 +167,55 @@
                 </div>
                 <div class="mt-6">
                   <nav class="grid grid-cols-1 gap-7">
-                    <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
-                      <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
-                        <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+                    <a
+                      v-for="item in solutions"
+                      :key="item.name"
+                      :href="item.href"
+                      class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50"
+                    >
+                      <div
+                        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white"
+                      >
+                        <component
+                          :is="item.icon"
+                          class="h-6 w-6"
+                          aria-hidden="true"
+                        />
                       </div>
-                      <div class="ml-4 text-base font-medium text-gray-900">{{ item.name }}</div>
+                      <div class="ml-4 text-base font-medium text-gray-900">
+                        {{ item.name }}
+                      </div>
                     </a>
                   </nav>
                 </div>
               </div>
               <div class="py-6 px-5">
                 <div class="grid grid-cols-2 gap-4">
-                  <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Pricing</a>
-                  <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Partners</a>
-                  <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Company</a>
+                  <a
+                    href="#"
+                    class="text-base font-medium text-gray-900 hover:text-gray-700"
+                    >Pricing</a
+                  >
+                  <a
+                    href="#"
+                    class="text-base font-medium text-gray-900 hover:text-gray-700"
+                    >Partners</a
+                  >
+                  <a
+                    href="#"
+                    class="text-base font-medium text-gray-900 hover:text-gray-700"
+                    >Company</a
+                  >
                 </div>
                 <div class="mt-6">
-                  <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700">Sign up</a>
-                  <p class="mt-6 text-center text-base font-medium text-gray-500">
+                  <a
+                    href="#"
+                    class="flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
+                    >Sign up</a
+                  >
+                  <p
+                    class="mt-6 text-center text-base font-medium text-gray-500"
+                  >
                     Existing customer?
                     <a href="#" class="text-gray-900">Sign in</a>
                   </p>
@@ -118,19 +234,45 @@
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
             <div class="absolute inset-0">
-              <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100" alt="People working on laptops" />
-              <div class="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply" />
+              <img
+                class="h-full w-full object-cover"
+                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+                alt="People working on laptops"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-purple-800 to-indigo-700 mix-blend-multiply"
+              />
             </div>
             <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-              <h1 class="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+              <h1
+                class="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+              >
                 <span class="block text-white">Take control of your</span>
                 <span class="block text-indigo-200">customer support</span>
               </h1>
-              <p class="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-              <div class="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
-                <div class="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                  <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8">Get started</a>
-                  <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-500 bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8">Live demo</a>
+              <p
+                class="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl"
+              >
+                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+                fugiat aliqua.
+              </p>
+              <div
+                class="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center"
+              >
+                <div
+                  class="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8"
+                    >Get started</a
+                  >
+                  <a
+                    href="#"
+                    class="flex items-center justify-center rounded-md border border-transparent bg-indigo-500 bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+                    >Live demo</a
+                  >
                 </div>
               </div>
             </div>
@@ -141,22 +283,56 @@
       <!-- Logo Cloud -->
       <div class="bg-gray-100">
         <div class="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
-          <p class="text-center text-base font-semibold text-gray-500">Trusted by over 5 very average small businesses</p>
-          <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+          <p class="text-center text-base font-semibold text-gray-500">
+            Trusted by over 5 very average small businesses
+          </p>
+          <div
+            class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5"
+          >
+            <div
+              class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+            >
+              <img
+                class="h-12"
+                src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
+                alt="Tuple"
+              />
             </div>
-            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
+            <div
+              class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+            >
+              <img
+                class="h-12"
+                src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
+                alt="Mirage"
+              />
             </div>
-            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
+            <div
+              class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+            >
+              <img
+                class="h-12"
+                src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+                alt="StaticKit"
+              />
             </div>
-            <div class="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-              <img class="h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg" alt="Transistor" />
+            <div
+              class="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1"
+            >
+              <img
+                class="h-12"
+                src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
+                alt="Transistor"
+              />
             </div>
-            <div class="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-              <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation" />
+            <div
+              class="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1"
+            >
+              <img
+                class="h-12"
+                src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
+                alt="Workcation"
+              />
             </div>
           </div>
         </div>
@@ -164,68 +340,132 @@
 
       <!-- Alternating Feature Sections -->
       <div class="relative overflow-hidden pt-16 pb-32">
-        <div aria-hidden="true" class="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100" />
+        <div
+          aria-hidden="true"
+          class="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"
+        />
         <div class="relative">
-          <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-            <div class="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
+          <div
+            class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8"
+          >
+            <div
+              class="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0"
+            >
               <div>
                 <div>
-                  <span class="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
+                  <span
+                    class="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600"
+                  >
                     <InboxIcon class="h-6 w-6 text-white" aria-hidden="true" />
                   </span>
                 </div>
                 <div class="mt-6">
-                  <h2 class="text-3xl font-bold tracking-tight text-gray-900">Stay on top of customer support</h2>
-                  <p class="mt-4 text-lg text-gray-500">Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.</p>
+                  <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+                    Stay on top of customer support
+                  </h2>
+                  <p class="mt-4 text-lg text-gray-500">
+                    Semper curabitur ullamcorper posuere nunc sed. Ornare
+                    iaculis bibendum malesuada faucibus lacinia porttitor.
+                    Pulvinar laoreet sagittis viverra duis. In venenatis sem
+                    arcu pretium pharetra at. Lectus viverra dui tellus ornare
+                    pharetra.
+                  </p>
                   <div class="mt-6">
-                    <a href="#" class="inline-flex rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700">Get started</a>
+                    <a
+                      href="#"
+                      class="inline-flex rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
+                      >Get started</a
+                    >
                   </div>
                 </div>
               </div>
               <div class="mt-8 border-t border-gray-200 pt-6">
                 <blockquote>
                   <div>
-                    <p class="text-base text-gray-500">&ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean curabitur donec aliquet. Mi venenatis in euismod ut.&rdquo;</p>
+                    <p class="text-base text-gray-500">
+                      &ldquo;Cras velit quis eros eget rhoncus lacus ultrices
+                      sed diam. Sit orci risus aenean curabitur donec aliquet.
+                      Mi venenatis in euismod ut.&rdquo;
+                    </p>
                   </div>
                   <footer class="mt-3">
                     <div class="flex items-center space-x-3">
                       <div class="flex-shrink-0">
-                        <img class="h-6 w-6 rounded-full" src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="" />
+                        <img
+                          class="h-6 w-6 rounded-full"
+                          src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                          alt=""
+                        />
                       </div>
-                      <div class="text-base font-medium text-gray-700">Marcia Hill, Digital Marketing Manager</div>
+                      <div class="text-base font-medium text-gray-700">
+                        Marcia Hill, Digital Marketing Manager
+                      </div>
                     </div>
                   </footer>
                 </blockquote>
               </div>
             </div>
             <div class="mt-12 sm:mt-16 lg:mt-0">
-              <div class="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg" alt="Inbox user interface" />
+              <div
+                class="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0"
+              >
+                <img
+                  class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                  src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
+                  alt="Inbox user interface"
+                />
               </div>
             </div>
           </div>
         </div>
         <div class="mt-24">
-          <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-            <div class="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
+          <div
+            class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8"
+          >
+            <div
+              class="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0"
+            >
               <div>
                 <div>
-                  <span class="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
-                    <SparklesIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                  <span
+                    class="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600"
+                  >
+                    <SparklesIcon
+                      class="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
                   </span>
                 </div>
                 <div class="mt-6">
-                  <h2 class="text-3xl font-bold tracking-tight text-gray-900">Better understand your customers</h2>
-                  <p class="mt-4 text-lg text-gray-500">Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.</p>
+                  <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+                    Better understand your customers
+                  </h2>
+                  <p class="mt-4 text-lg text-gray-500">
+                    Semper curabitur ullamcorper posuere nunc sed. Ornare
+                    iaculis bibendum malesuada faucibus lacinia porttitor.
+                    Pulvinar laoreet sagittis viverra duis. In venenatis sem
+                    arcu pretium pharetra at. Lectus viverra dui tellus ornare
+                    pharetra.
+                  </p>
                   <div class="mt-6">
-                    <a href="#" class="inline-flex rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700">Get started</a>
+                    <a
+                      href="#"
+                      class="inline-flex rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-2 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
+                      >Get started</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
             <div class="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
-              <div class="-ml-48 pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg" alt="Customer profile user interface" />
+              <div
+                class="-ml-48 pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0"
+              >
+                <img
+                  class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                  src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg"
+                  alt="Customer profile user interface"
+                />
               </div>
             </div>
           </div>
@@ -234,19 +474,39 @@
 
       <!-- Gradient Feature Section -->
       <div class="bg-gradient-to-r from-purple-800 to-indigo-700">
-        <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24">
-          <h2 class="text-3xl font-bold tracking-tight text-white">Inbox support built for efficiency</h2>
-          <p class="mt-4 max-w-3xl text-lg text-purple-200">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. Blandit aliquam sit nisl euismod mattis in.</p>
-          <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
+        <div
+          class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24"
+        >
+          <h2 class="text-3xl font-bold tracking-tight text-white">
+            Inbox support built for efficiency
+          </h2>
+          <p class="mt-4 max-w-3xl text-lg text-purple-200">
+            Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
+            magna sit morbi lobortis. Blandit aliquam sit nisl euismod mattis
+            in.
+          </p>
+          <div
+            class="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16"
+          >
             <div v-for="feature in features" :key="feature.name">
               <div>
-                <span class="flex h-12 w-12 items-center justify-center rounded-md bg-white bg-opacity-10">
-                  <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
+                <span
+                  class="flex h-12 w-12 items-center justify-center rounded-md bg-white bg-opacity-10"
+                >
+                  <component
+                    :is="feature.icon"
+                    class="h-6 w-6 text-white"
+                    aria-hidden="true"
+                  />
                 </span>
               </div>
               <div class="mt-6">
-                <h3 class="text-lg font-medium text-white">{{ feature.name }}</h3>
-                <p class="mt-2 text-base text-purple-200">{{ feature.description }}</p>
+                <h3 class="text-lg font-medium text-white">
+                  {{ feature.name }}
+                </h3>
+                <p class="mt-2 text-base text-purple-200">
+                  {{ feature.description }}
+                </p>
               </div>
             </div>
           </div>
@@ -258,23 +518,50 @@
         <div class="absolute inset-x-0 bottom-0 h-80 xl:top-0 xl:h-full">
           <div class="h-full w-full xl:grid xl:grid-cols-2">
             <div class="h-full xl:relative xl:col-start-2">
-              <img class="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0" src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100" alt="People working on laptops" />
-              <div aria-hidden="true" class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r" />
+              <img
+                class="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
+                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+                alt="People working on laptops"
+              />
+              <div
+                aria-hidden="true"
+                class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
+              />
             </div>
           </div>
         </div>
-        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-flow-col-dense xl:grid-cols-2 xl:gap-x-8">
-          <div class="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
+        <div
+          class="mx-auto max-w-4xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-flow-col-dense xl:grid-cols-2 xl:gap-x-8"
+        >
+          <div
+            class="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24"
+          >
             <h2 class="text-base font-semibold">
-              <span class="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent">Valuable Metrics</span>
+              <span
+                class="bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent"
+                >Valuable Metrics</span
+              >
             </h2>
-            <p class="mt-3 text-3xl font-bold tracking-tight text-white">Get actionable data that will help grow your business</p>
-            <p class="mt-5 text-lg text-gray-300">Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus nibh integer quis. Eu vulputate diam sit tellus quis at.</p>
+            <p class="mt-3 text-3xl font-bold tracking-tight text-white">
+              Get actionable data that will help grow your business
+            </p>
+            <p class="mt-5 text-lg text-gray-300">
+              Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing
+              quis in viverra tristique sem. Ornare feugiat viverra eleifend
+              fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus
+              laoreet amet lacus nibh integer quis. Eu vulputate diam sit tellus
+              quis at.
+            </p>
             <div class="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
               <p v-for="item in metrics" :key="item.id">
-                <span class="block text-2xl font-bold text-white">{{ item.stat }}</span>
+                <span class="block text-2xl font-bold text-white">{{
+                  item.stat
+                }}</span>
                 <span class="mt-1 block text-base text-gray-300"
-                  ><span class="font-medium text-white">{{ item.emphasis }}</span> {{ item.rest }}</span
+                  ><span class="font-medium text-white">{{
+                    item.emphasis
+                  }}</span>
+                  {{ item.rest }}</span
                 >
               </p>
             </div>
@@ -284,14 +571,29 @@
 
       <!-- CTA Section -->
       <div class="bg-white">
-        <div class="mx-auto max-w-4xl py-16 px-4 sm:px-6 sm:py-24 lg:flex lg:max-w-7xl lg:items-center lg:justify-between lg:px-8">
-          <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <div
+          class="mx-auto max-w-4xl py-16 px-4 sm:px-6 sm:py-24 lg:flex lg:max-w-7xl lg:items-center lg:justify-between lg:px-8"
+        >
+          <h2
+            class="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
             <span class="block">Ready to get started?</span>
-            <span class="-mb-1 block bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text pb-1 text-transparent">Get in touch or create an account.</span>
+            <span
+              class="-mb-1 block bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text pb-1 text-transparent"
+              >Get in touch or create an account.</span
+            >
           </h2>
           <div class="mt-6 space-y-4 sm:flex sm:space-y-0 sm:space-x-5">
-            <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-3 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700">Learn more</a>
-            <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-50 px-4 py-3 text-base font-medium text-indigo-800 shadow-sm hover:bg-indigo-100">Get started</a>
+            <a
+              href="#"
+              class="flex items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-3 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
+              >Learn more</a
+            >
+            <a
+              href="#"
+              class="flex items-center justify-center rounded-md border border-transparent bg-indigo-50 px-4 py-3 text-base font-medium text-indigo-800 shadow-sm hover:bg-indigo-100"
+              >Get started</a
+            >
           </div>
         </div>
       </div>
@@ -306,8 +608,15 @@
               <div>
                 <h3 class="text-base font-medium text-gray-900">Solutions</h3>
                 <ul role="list" class="mt-4 space-y-4">
-                  <li v-for="item in footerNavigation.solutions" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">{{ item.name }}</a>
+                  <li
+                    v-for="item in footerNavigation.solutions"
+                    :key="item.name"
+                  >
+                    <a
+                      :href="item.href"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                      >{{ item.name }}</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -315,7 +624,11 @@
                 <h3 class="text-base font-medium text-gray-900">Support</h3>
                 <ul role="list" class="mt-4 space-y-4">
                   <li v-for="item in footerNavigation.support" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">{{ item.name }}</a>
+                    <a
+                      :href="item.href"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                      >{{ item.name }}</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -325,7 +638,11 @@
                 <h3 class="text-base font-medium text-gray-900">Company</h3>
                 <ul role="list" class="mt-4 space-y-4">
                   <li v-for="item in footerNavigation.company" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">{{ item.name }}</a>
+                    <a
+                      :href="item.href"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                      >{{ item.name }}</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -333,32 +650,63 @@
                 <h3 class="text-base font-medium text-gray-900">Legal</h3>
                 <ul role="list" class="mt-4 space-y-4">
                   <li v-for="item in footerNavigation.legal" :key="item.name">
-                    <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">{{ item.name }}</a>
+                    <a
+                      :href="item.href"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                      >{{ item.name }}</a
+                    >
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="mt-12 xl:mt-0">
-            <h3 class="text-base font-medium text-gray-900">Subscribe to our newsletter</h3>
-            <p class="mt-4 text-base text-gray-500">The latest news, articles, and resources, sent to your inbox weekly.</p>
+            <h3 class="text-base font-medium text-gray-900">
+              Subscribe to our newsletter
+            </h3>
+            <p class="mt-4 text-base text-gray-500">
+              The latest news, articles, and resources, sent to your inbox
+              weekly.
+            </p>
             <form class="mt-4 sm:flex sm:max-w-md">
               <label for="email-address" class="sr-only">Email address</label>
-              <input type="email" name="email-address" id="email-address" autocomplete="email" required="" class="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-indigo-500" placeholder="Enter your email" />
+              <input
+                type="email"
+                name="email-address"
+                id="email-address"
+                autocomplete="email"
+                required=""
+                class="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-indigo-500"
+                placeholder="Enter your email"
+              />
               <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button type="submit" class="flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-3 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700">Subscribe</button>
+                <button
+                  type="submit"
+                  class="flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-3 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700"
+                >
+                  Subscribe
+                </button>
               </div>
             </form>
           </div>
         </div>
-        <div class="mt-12 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between lg:mt-16">
+        <div
+          class="mt-12 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between lg:mt-16"
+        >
           <div class="flex space-x-6 md:order-2">
-            <a v-for="item in footerNavigation.social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
+            <a
+              v-for="item in footerNavigation.social"
+              :key="item.name"
+              :href="item.href"
+              class="text-gray-400 hover:text-gray-500"
+            >
               <span class="sr-only">{{ item.name }}</span>
               <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
             </a>
           </div>
-          <p class="mt-8 text-base text-gray-400 md:order-1 md:mt-0">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+          <p class="mt-8 text-base text-gray-400 md:order-1 md:mt-0">
+            &copy; 2020 Your Company, Inc. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
@@ -367,7 +715,12 @@
 
 <script setup>
 import { defineComponent, h } from 'vue';
-import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue';
+import {
+  Popover,
+  PopoverButton,
+  PopoverGroup,
+  PopoverPanel,
+} from '@headlessui/vue';
 import {
   ArrowUturnLeftIcon,
   Bars3Icon,
@@ -383,13 +736,14 @@ import {
   TrashIcon,
   UsersIcon,
   XMarkIcon,
-} from '@heroicons/vue/24/outline';
-import { ChevronDownIcon } from '@heroicons/vue/20/solid';
+} from '@heroicons/vue/24/outline/index';
+import { ChevronDownIcon } from '@heroicons/vue/20/solid/index';
 
 const solutions = [
   {
     name: 'Inbox',
-    description: 'Get a better understanding of where your traffic is coming from.',
+    description:
+      'Get a better understanding of where your traffic is coming from.',
     href: '#',
     icon: InboxIcon,
   },
@@ -415,50 +769,78 @@ const solutions = [
 const features = [
   {
     name: 'Unlimited Inboxes',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description:
+      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
     icon: InboxIcon,
   },
   {
     name: 'Manage Team Members',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description:
+      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
     icon: UsersIcon,
   },
   {
     name: 'Spam Report',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description:
+      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
     icon: TrashIcon,
   },
   {
     name: 'Compose in Markdown',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description:
+      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
     icon: PencilSquareIcon,
   },
   {
     name: 'Team Reporting',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description:
+      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
     icon: DocumentChartBarIcon,
   },
   {
     name: 'Saved Replies',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description:
+      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
     icon: ArrowUturnLeftIcon,
   },
   {
     name: 'Email Commenting',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description:
+      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
     icon: ChatBubbleLeftEllipsisIcon,
   },
   {
     name: 'Connect with Customers',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description:
+      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
     icon: HeartIcon,
   },
 ];
 const metrics = [
-  { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
-  { id: 2, stat: '25K+', emphasis: 'Countries around the globe', rest: 'lacus nibh integer quis.' },
-  { id: 3, stat: '98%', emphasis: 'Customer satisfaction', rest: 'laoreet amet lacus nibh integer quis.' },
-  { id: 4, stat: '12M+', emphasis: 'Issues resolved', rest: 'lacus nibh integer quis.' },
+  {
+    id: 1,
+    stat: '8K+',
+    emphasis: 'Companies',
+    rest: 'use laoreet amet lacus nibh integer quis.',
+  },
+  {
+    id: 2,
+    stat: '25K+',
+    emphasis: 'Countries around the globe',
+    rest: 'lacus nibh integer quis.',
+  },
+  {
+    id: 3,
+    stat: '98%',
+    emphasis: 'Customer satisfaction',
+    rest: 'laoreet amet lacus nibh integer quis.',
+  },
+  {
+    id: 4,
+    stat: '12M+',
+    emphasis: 'Issues resolved',
+    rest: 'lacus nibh integer quis.',
+  },
 ];
 const footerNavigation = {
   solutions: [
