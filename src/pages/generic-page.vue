@@ -1,23 +1,27 @@
 <template>
-<div>
-  <h1>App name: {{appName}}</h1>
-  <h1>App description: {{appDescription}}</h1>
-  <i class="text-9xl las la-battery-three-quarters"></i>
-</div>
+<generic-panel
+  full-height
+>
+  <h1 class="text-7xl">Foo</h1>
+</generic-panel>
 </template>
 
 <script>
+import GenericPanel from '~~/src/components/commons/GenericPanel.vue';
 import { useHead } from '#app';
 import { ref, useRoute, definePageMeta } from '#imports';
 export default {
+  components: {
+    GenericPanel,
+  },
   setup () {
     definePageMeta({
-      layout: 'custom',
+      layout: 'main',
     });
 
     useHead({
-      title: 'About Page',
-      description: 'Dolore do culpa non est non. Id enim dolor laboris occaecat incididunt.',
+      title: 'Generic Page',
+      description: 'Officia labore officia sit pariatur anim nostrud commodo ullamco ea aliqua ea ex do cillum.',
     });
 
     const route = useRoute();
