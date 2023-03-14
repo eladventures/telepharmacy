@@ -1,8 +1,23 @@
 <template>
-<generic-panel
-  full-height
->
-  <h1 class="text-7xl">Foo</h1>
+<generic-panel>
+  <h1 class="text-7xl text-primary">Primary Color</h1>
+</generic-panel>
+<generic-panel>
+  <div class="sm:flex sm:flex-col md:grid md:grid-cols-5 gap-4 mb-5">
+    <div class="col-span-1 p-14 bg-red-100"></div>
+    <div class="col-span-1 p-14 bg-blue-100"></div>
+    <div class="col-span-1 p-14 bg-green-100"></div>
+    <div class="col-span-1 p-14 bg-pink-100"></div>
+    <div class="col-span-1 p-14 bg-orange-100"></div>
+    <div class="col-span-1 p-14 bg-red-100"></div>
+    <div class="col-span-1 p-14 bg-blue-100"></div>
+    <div class="col-span-1 p-14 bg-green-100"></div>
+  </div>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="col-span-1 p-14 bg-red-100"></div>
+    <div class="col-span-1 p-14 bg-blue-100"></div>
+    <div class="col-span-1 p-14 bg-green-100"></div>
+  </div>
 </generic-panel>
 </template>
 

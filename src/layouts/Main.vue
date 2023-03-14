@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen bg-slate-300">
+  <div class="h-screen bg-slate-300 text-gray-700">
     <navbar/>
     <slot/>
   </div>

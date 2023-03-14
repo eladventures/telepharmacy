@@ -1,0 +1,15 @@
+/* Custom fonts here */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-drawer {
+  width: 300px;
+  margin-right: 0px;
+  @apply h-screen bg-green-300 absolute right-0 top-0 md:hidden transition ease-in-out duration-500;
+}
+
+.nav-drawer-hidden {
+  margin-right: -300px;
+}
