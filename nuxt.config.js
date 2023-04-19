@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   preset: 'node-server',
   modules: [
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
   ],
   nitro: {
     preset: 'firebase',
