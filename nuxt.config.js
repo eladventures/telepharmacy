@@ -1,20 +1,39 @@
+// const LANG = 'en_US';
+// const TYPE = 'website';
+// const URL = 'https://hippocrades.com';
+// const SITE_NAME = 'hippocrades.com';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // eslint-disable-next-line no-undef
 export default defineNuxtConfig({
   preset: 'node-server',
+
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
+    'nuxt-headlessui',
+    'nuxt-gtag',
   ],
-  nitro: {
-    preset: 'firebase',
+
+  gtag: {
+    id: 'G-M1KERXTK1H', // TODO: Add your google analytics 4 tag here
   },
+
   srcDir: './src',
+
   runtimeConfig: {
     public: {
-      apiURL: '',
+      yourEnv: process.env.YOUR_ENV,
     },
   },
+
+  plugins: [
+    {
+      src: '@/plugins/aos',
+      ssr: false,
+      mode: 'client',
+    },
+  ],
+
   app: {
     head: {
       link: [
@@ -25,6 +44,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
     configPath: 'tailwind.config',
@@ -33,5 +53,33 @@ export default defineNuxtConfig({
     config: {},
     injectPosition: 'first',
     viewer: true,
+  },
+
+  headlessui: {
+    prefix: 'Headless',
+  },
+
+  build: {
+    extend (config, ctx) {
+      config.resolve.symlinks = false;
+    },
+  },
+
+  image: {
+    dir: 'assets/images',
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536,
+      '3xl': 1920,
+    },
+  },
+
+  devtools: {
+    enabled: true,
   },
 });

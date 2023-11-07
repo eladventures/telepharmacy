@@ -1,46 +1,61 @@
-# Nuxt 3 + Tailwind Template
+<h1 align="center">Nuxt + Tailwind + DaisyUI Template</h1>
+<p style="text-align: center">
+  Template for Nuxt.js + Tailwind CSS + DaisyUI
+</p>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- [Getting Started Guide](#getting-started-guide)
 
-## Setup
+# Getting Started Guide
 
-Make sure to install the dependencies:
+## Installation
 
-```bash
-# yarn
-yarn install
+No installation needed. Just fork this repository and you're good to go.
 
-# npm
-npm install
+## Make changes
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+You can make changes to the template by editing the files in the `src` folder.
 
-## Development Server
+## Preview
 
-Start the development server on http://localhost:3000
+You can preview your build by running the `nuxt start` command.
 
 ```bash
-npm run dev
+# Preview your build
+$ nuxt start
 ```
 
-## Production
+## Build
 
-Build the application for production:
+You can choose to build it using the defaul strategy which is SSR, but you also have the option to generate static files so you can just upload your work in any static hosting service. The sample site of this repo is hosted in Vercel.
+
 
 ```bash
-npm run build
+# Build for production using SSR
+$ nuxt build
 ```
-
-Locally preview production build:
 
 ```bash
-npm run preview
+# Build for production and generate static files
+$ nuxt generate
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Deploy
 
-# Preview
+You can deploy your work in any static hosting service.
 
-<img src="./screenshot.png">
+Here's a list of static hosting services that you can use:
+
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+- [Firebase](https://firebase.google.com/)
+- [Surge](https://surge.sh/)
+- [Render](https://render.com/)
+- [GitHub Pages](https://pages.github.com/)
+- [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
+- [AWS Amplify](https://aws.amazon.com/amplify/)
+- [Cloudflare Pages](https://pages.cloudflare.com/)
+- [Begin](https://begin.com/)
+- [Fast.io](https://fast.io/)
+- [Fly](https://fly.io/)
+- [Deta](https://www.deta.sh/)
+- [Aerobatic](https://www.aerobatic.com/)

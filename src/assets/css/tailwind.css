@@ -1,15 +1,31 @@
 /* Custom fonts here */
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.nav-drawer {
-  width: 300px;
-  margin-right: 0px;
-  @apply h-screen bg-green-300 absolute right-0 top-0 md:hidden transition ease-in-out duration-500;
+body {
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  @apply text-gray-900;
 }
 
-.nav-drawer-hidden {
-  margin-right: -300px;
+.btn {
+  @apply normal-case;
+}
+
+.title-hero {
+  @apply text-7xl text-gray-900;
+}
+
+.subtitle-hero {
+  @apply text-3xl text-gray-500;
+}
+
+.title-panel {
+  @apply text-6xl text-gray-900;
+}
+
+.subtitle-panel {
+  @apply text-3xl text-gray-500;
 }
