@@ -5,6 +5,7 @@
       <div class="max-w-xl">
         <h1 data-aos="fade-down" class="text-4xl md:text-6xl font-bold mb-6">Nuxt + Tailwind + DaisyUI Template</h1>
         <p data-aos="fade-down" data-aos-delay="300" class="md:text-lg mb-6">Template for Nuxt.js + Tailwind CSS + DaisyUI</p>
+        <p data-aos="fade-down" data-aos-delay="600" class="md:text-lg mb-6">Laboris qui enim quis labore sunt laboris Lorem anim veniam voluptate consequat non in dolor Lorem. Aliquip voluptate culpa cillum esse aliqua commodo non tempor nisi officia. Aliqua eiusmod sit nisi duis eu quis anim dolor fugiat ex minim officia. Incididunt pariatur commodo in ut ad occaecat nisi. Sit adipisicing duis eiusmod Lorem dolor nostrud excepteur irure irure velit. Fugiat ut nulla consectetur adipisicing amet sunt amet ea.</p>
         <div class="flex justify-center space-x-5">
           <a
             data-aos="fade-down"

@@ -1,9 +1,9 @@
 {
-  "name": "nuxtwind-daisy",
+  "name": "nuxt-tailwind-template",
   "version": "1.0.0",
   "main": ".eslintrc.js",
-  "description": "Nuxtwind Daisy is a starter template for Nuxt.js 3 + Tailwind CSS + Daisy UI with additional installed setup for custom font, icons, animation, and more.",
-  "productName": "Nuxtwind Daisy 🟢💨🌼",
+  "description": "Template for Nuxt.js + Tailwind CSS + DaisyUI",
+  "productName": "Nuxt + Tailwind + DaisyUI Template",
   "author": "Joff Tiquez <jofftiquez@gmail.com>",
   "scripts": {
     "lint": "eslint --ext .js,.vue ./ --fix",
