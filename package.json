@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
-    "@nuxt/devtools": "^0.6.4",
+    "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/container-queries": "^0.1.0",
     "@tailwindcss/forms": "^0.5.3",
