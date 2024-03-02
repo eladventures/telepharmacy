@@ -32,7 +32,10 @@
     "nuxt": "^3.6.5",
     "nuxt-gtag": "^0.5.7",
     "nuxt-headlessui": "^1.1.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "resolutions": {
+      "string-width": "4.2.3"
+    }
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
