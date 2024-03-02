@@ -1,338 +1,867 @@
 <template>
+    <!-- HERO PANEL -->
+    <section class="bg-white">
+        <div class="dark:bg-violet-400">
+            <div
+                class="container flex flex-col items-center px-4 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 text-gray-900"
+            >
+                <!-- logo-center -->
+                <div class="logo-container">
+                    <img
+                        src="../assets/images/parmazip-logo.png"
+                        alt="Logo"
+                        class="logo"
+                    />
+                </div>
+                <!-- title -->
+                <!-- <p class="text-xl sm:mb-12 xl:max-w-3xl dark:text-gray-900 font-inter">Designed for Canadian Pharmacy</p> -->
+                <h1
+                    class="font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter"
+                >
+                    Supercharge your workflows with Privacy-First Telepharmacy.
+                </h1>
 
-  <div class="hero min-h-screen bg-base-200">
-    <div class="hero-content text-center">
-      <div class="max-w-xl">
-        <h1 data-aos="fade-down" class="text-4xl md:text-6xl font-bold mb-6">Nuxt + Tailwind + DaisyUI Template</h1>
-        <p data-aos="fade-down" data-aos-delay="300" class="md:text-lg mb-6">Template for Nuxt.js + Tailwind CSS + DaisyUI</p>
-        <p data-aos="fade-down" data-aos-delay="600" class="md:text-lg mb-6">Laboris qui enim quis labore sunt laboris Lorem anim veniam voluptate consequat non in dolor Lorem. Aliquip voluptate culpa cillum esse aliqua commodo non tempor nisi officia. Aliqua eiusmod sit nisi duis eu quis anim dolor fugiat ex minim officia. Incididunt pariatur commodo in ut ad occaecat nisi. Sit adipisicing duis eiusmod Lorem dolor nostrud excepteur irure irure velit. Fugiat ut nulla consectetur adipisicing amet sunt amet ea.</p>
-        <div class="flex justify-center space-x-5">
-          <a
-            data-aos="fade-down"
-            data-aos-delay="600"
-            class="btn btn-sm md:btn-md btn-primary"
-            href="https://github.com/mycurelabs/nuxt-tailwind-template/fork"
-            target="_blank"
-          >
-            Fork this Project
-          </a>
-          <a
-            data-aos="fade-down"
-            data-aos-delay="600"
-            class="btn btn-sm md:btn-md btn-primary btn-outline"
-            href="https://github.com/mycurelabs/nuxt-tailwind-template"
-            target="_blank"
-          >
-            Give us a star in GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+                <!--animation text here  -->
+                <!-- animation source:  https://dev.to/gayathri_r/how-to-add-a-typewriter-animation-in-vuejs-43kj -->
+                <div class="custom-container">
+                    <h1 class="custom-heading items-center font-inter">
+                        <span class="typed-text">{{ typeValue }}</span>
+                        <span class="blinking-cursor">|</span>
+                        <span class="cursor" :class="{ typing: typeStatus }"
+                            >&nbsp;</span
+                        >
+                    </h1>
+                </div>
 
-  <generic-panel>
-    <div class="flex flex-col">
-      <h1 class="text-3xl md:text-5xl mb-5">Introduction</h1>
-      <p class="md:text-lg">Create beautiful and fast websites without worrying about the tedious setup. Just fork this repository and start hacking away!</p>
-    </div>
-  </generic-panel>
-
-  <generic-panel>
-    <div class="flex flex-col">
-      <h1 class="text-3xl md:text-5xl mb-5">Getting Started</h1>
-      <p class="md:text-lg">Read <a href="https://github.com/mycurelabs/nuxt-tailwind-template#readme" class="text-primary">the documentation</a> on how to start quickly.</p>
-    </div>
-  </generic-panel>
-
-  <generic-panel>
-    <div class="flex flex-col">
-      <h1 class="text-3xl md:text-5xl mb-5">Features</h1>
-      <p class="md:text-lg">See what you can do below. Basically, every basic thing that you need is already included in this starter template project. From custom font, icons, animations, and more.</p>
-    </div>
-  </generic-panel>
-
-  <generic-panel>
-    <div class="flex flex-col mb-5">
-      <h1 class="text-xl md:text-3xl mb-5">Icons by Line Awesome <i class="las la-icons text-primary"></i></h1>
-      <p class="md:text-lg">Get more icons from the <a class="text-primary" href="https://icons8.com/line-awesome" target="_blank">Line Awesome documentation</a>.</p>
-    </div>
-    <div class="flex space-x-5 overflow-scroll">
-      <i class="las la-cat text-4xl"></i>
-      <i class="las la-crow text-4xl"></i>
-      <i class="las la-dog text-4xl"></i>
-      <i class="las la-dove text-4xl"></i>
-      <i class="las la-horse text-4xl"></i>
-      <i class="las la-spider text-4xl"></i>
-      <i class="las la-kiwi-bird text-4xl"></i>
-      <i class="las la-beer text-4xl"></i>
-      <i class="las la-glass-whiskey text-4xl"></i>
-      <i class="las la-home text-4xl"></i>
-      <i class="las la-birthday-cake text-4xl"></i>
-      <a class="hidden md:inline text-lg mt-1 text-primary" href="https://icons8.com/line-awesome" target="_blank">and more...</a>
-    </div>
-    <a class="inline md:hidden text-lg mt-1 text-primary" href="https://icons8.com/line-awesome" target="_blank">and more...</a>
-  </generic-panel>
-
-  <generic-panel>
-    <div class="flex flex-col mb-5">
-      <h1 class="text-xl md:text-3xl mb-5">Animation by AOS.js <i class="las la-running text-primary"></i></h1>
-      <p class="md:text-lg">Check <a class="text-primary" href="https://michalsnik.github.io/aos/" target="_blank">AOS.js documentation</a> for more animations.</p>
-    </div>
-    <div class="flex flex-col">
-      <div class="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5">
-        <div data-aos="fade-down" data-aos-delay="500" class="w-full md:w-[200px] h-[200px] bg-green-200"></div>
-        <div data-aos="flip-left" data-aos-delay="1000" class="w-full md:w-[200px] h-[200px] bg-red-200"></div>
-        <div data-aos="zoom-in" data-aos-delay="1500" class="w-full md:w-[200px] h-[200px] bg-blue-200"></div>
-        <a class="text-lg mt-1 text-primary" href="https://michalsnik.github.io/aos/" target="_blank">more animations...</a>
-      </div>
-    </div>
-  </generic-panel>
-
-  <generic-panel>
-    <div class="flex flex-col mb-5">
-      <h1 class="text-xl md:text-3xl mb-5">UI Components by Daisy UI 🌼 version 3</h1>
-      <p class="md:text-lg">Learn more from the official <a class="text-primary" href="https://daisyui.com/" target="_blank">daisyUI documentation</a>.</p>
-    </div>
-    <div class="flex flex-col">
-      <h1 class="md:text-xl mb-5 font-bold">Buttons</h1>
-      <div class="flex space-x-5 overflow-scroll">
-        <button class="btn">Button</button>
-        <button class="btn btn-primary">Button</button>
-        <button class="btn btn-secondary">Button</button>
-        <button class="btn btn-accent">Button</button>
-        <button class="btn btn-ghost">Button</button>
-        <button class="btn btn-link">Button</button>
-      </div>
-    </div>
-  </generic-panel>
-
-  <generic-panel>
-    <div class="flex flex-col">
-      <h1 class="md:text-xl mb-5 font-bold">Alerts</h1>
-      <div class="space-y-5">
-        <div class="alert shadow-lg">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <span>12 unread messages. Tap to see.</span>
-          </div>
-        </div>
-
-        <div class="alert alert-info shadow-lg">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <span>New software update available.</span>
-          </div>
-        </div>
-
-        <div class="alert alert-success shadow-lg">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-            <span>Your purchase has been confirmed!</span>
-          </div>
-        </div>
-
-        <div class="alert alert-warning shadow-lg">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-            <span>Warning: Invalid email address!</span>
-          </div>
-        </div>
-
-        <div class="alert alert-error shadow-lg">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-            <span>Error! Task failed successfully.</span>
-          </div>
-        </div>
-
-        <div class="alert shadow-lg">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <span>we use cookies for no reason.</span>
-          </div>
-          <div class="flex-none">
-            <button class="btn btn-sm btn-ghost">Deny</button>
-            <button class="btn btn-sm btn-primary">Accept</button>
-          </div>
-        </div>
-
-        <div class="alert shadow-lg">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <div>
-              <h3 class="font-bold">New message!</h3>
-              <div class="text-xs">You have 1 unread message</div>
+                <p
+                    class="mb-0 text-2xl sm:mb-12 xl:max-w-2xl dark:text-gray-900 font-inter"
+                >
+                    Easily setup your own Telepharmacy System. More minor
+                    ailment consultations and prescription counselings!<Input:t
+                    ></Input:t>
+                </p>
+                <!-- button -->
+                <div class="flex flex-wrap items-center justify-center -mt-5">
+                    <input
+                        type="text"
+                        placeholder="Your email address"
+                        class="input bg-white border-1 border-gray-600 w-full max-w-xs md:w-auto"
+                    />
+                    <button
+                        type="button"
+                        class="ml-2 px-8 py-3 text-lg border-1 text-white bg-red-400 rounded dark:text-gray-300"
+                    >
+                        Join Waitlist
+                    </button>
+                </div>
             </div>
-          </div>
-          <div class="flex-none">
-            <button class="btn btn-sm">See</button>
-          </div>
         </div>
-      </div>
-    </div>
-  </generic-panel>
 
-  <generic-panel>
-    <div class="flex flex-col">
-      <h1 class="md:text-xl mb-5 font-bold">Badges</h1>
-      <div class="flex space-x-5 overflow-scroll">
-        <div class="badge badge-info gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-          info
-        </div>
-        <div class="badge badge-success gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-          success
-        </div>
-        <div class="badge badge-warning gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-          warning
-        </div>
-        <div class="badge badge-error gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-4 h-4 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-          error
-        </div>
-      </div>
-    </div>
-  </generic-panel>
+        <!-- <div class="container flex flex-col items-center px-4 py-16 mt-20 pb-8 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900">
+    <video src="../assets/images/easy-joey-1.mp4" autoplay loop muted class="max-w-5xl mx-auto mb-10 mt-80 rounded-3xl shadow-2xl lg:-mt-40 dark:bg-gray-700 border-0 border-gray-800"></video>
+  </div> -->
 
-  <generic-panel>
-    <div class="flex flex-col">
-      <h1 class="md:text-xl mb-5 font-bold">Chat Bubbles</h1>
-      <div class="flex flex-col">
-        <div class="chat chat-start">
-          <div class="chat-bubble chat-bubble-primary">What kind of nonsense is this</div>
-        </div>
-        <div class="chat chat-start">
-          <div class="chat-bubble chat-bubble-secondary">Put me on the Council and not make me a Master!??</div>
-        </div>
-        <div class="chat chat-start">
-          <div class="chat-bubble chat-bubble-accent">That's never been done in the history of the Jedi. It's insulting!</div>
-        </div>
-        <div class="chat chat-end">
-          <div class="chat-bubble chat-bubble-info">Calm down, Anakin.</div>
-        </div>
-        <div class="chat chat-end">
-          <div class="chat-bubble chat-bubble-success">You have been given a great honor.</div>
-        </div>
-        <div class="chat chat-end">
-          <div class="chat-bubble chat-bubble-warning">To be on the Council at your age.</div>
-        </div>
-        <div class="chat chat-end">
-          <div class="chat-bubble chat-bubble-error">It's never happened before.</div>
-        </div>
-      </div>
-    </div>
-  </generic-panel>
+        <img
+            src="../assets/images/parmazip-tele3.png"
+            alt=""
+            class="w-3/4 pt-40 mx-auto mb-20 rounded-lg lg:-mt-40 dark:bg-gray-500"
+            data-aos="zoom-in"
+        />
+    </section>
 
-  <generic-panel>
-    <div class="flex flex-col">
-      <h1 class="md:text-xl mb-5 font-bold">Checkboxes</h1>
-      <div class="flex flex-col">
-        <div class="form-control w-52">
-          <label class="cursor-pointer label">
-            <span class="label-text">Remember me</span>
-            <input type="checkbox" class="toggle toggle-primary" checked />
-          </label>
+    <!-- 2nd PANEL -->
+    <section class="bg-white mb-20">
+        <div
+            class="container flex flex-col items-center px-4 py-16 pb-8 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 bg-white"
+        >
+            <h1
+                class="-mt-10 font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter text-gray-800"
+            >
+                Your Own TelePharmacy
+            </h1>
+            <p
+                class="max-w-5xl mx-auto mt-4 text-xl dark:text-gray-400 font-inter text-gray-500"
+            >
+                Affordable robust telepharmacy setup right in your pharmacy.
+            </p>
         </div>
-        <div class="form-control w-52">
-          <label class="cursor-pointer label">
-            <span class="label-text">Remember me</span>
-            <input type="checkbox" class="toggle toggle-secondary" checked />
-          </label>
-        </div>
-        <div class="form-control w-52">
-          <label class="cursor-pointer label">
-            <span class="label-text">Remember me</span>
-            <input type="checkbox" class="toggle toggle-accent" checked />
-          </label>
-        </div>
-      </div>
-    </div>
-  </generic-panel>
 
-  <generic-panel>
-    <div class="flex flex-col">
-      <h1 class="md:text-xl mb-5 font-bold">Footers</h1>
-      <footer class="footer p-10 bg-base-200 text-base-content">
+        <!-- 3 Descriptions -->
+        <!-- CARDS HERE -->
+
+        <div
+            class="max-w-7xl mx-auto dark:bg-gray-800 dark:text-gray-100 text-white"
+        >
+            <div class="flex flex-col md:flex-row justify-center mt-4">
+                <!--Card 1  -->
+                <div
+                    class="mx-2 w-full md:w-1/3 card card-compact w-96 bg-red-400 shadow-xl"
+                    ,
+                    data-aos="zoom-in"
+                >
+                    <figure>
+                        <img
+                            src="../assets/images/parmazip-feature-1.png"
+                            alt="Shoes"
+                        />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Designed for Everyday Use</h2>
+                        <p>
+                            Very easy interface that you can access anytime.
+                            Consult, prescribe, and document. That's it!
+                        </p>
+                        <!-- <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+  </div> -->
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="mx-2 w-full md:w-1/3 card card-compact w-96 bg-red-400 shadow-xl"
+                    ,
+                    data-aos="zoom-in"
+                >
+                    <figure>
+                        <img
+                            src="../assets/images/parmazip-feature-2.png"
+                            alt="Shoes"
+                        />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            Partner with Dedicated Pharmacists
+                        </h2>
+                        <p>
+                            Practive with confidence by partnering up with your
+                            trusted pharmacists anywhere in Canada.
+                        </p>
+                        <!-- <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+  </div> -->
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="mx-2 w-full md:w-1/3 card card-compact w-96 bg-red-400 shadow-xl"
+                    ,
+                    data-aos="zoom-in"
+                >
+                    <figure>
+                        <img
+                            src="../assets/images/parmazip-feature-3.png"
+                            alt="Shoes"
+                        />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Secure Telehealth Platform</h2>
+                        <p>
+                            Parmazip is built with data privacy and security at
+                            its core. Has end-to-end encryptuon. No data is
+                            stored in the cloud.
+                        </p>
+                        <!-- <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+  </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3rd PANEL-->
+    <section class="bg-white pb-20">
+        <div
+            class="container flex flex-col items-center px-4 py-16 pb-8 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 bg-white"
+        >
+            <h1
+                class="-mt-10 font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter text-gray-800"
+            >
+                How it works
+            </h1>
+            <p
+                class="max-w-5xl mx-auto mt-4 text-xl dark:text-gray-400 font-inter text-gray-500"
+            >
+                There are two ways the patient can consult with the pharmacist.
+            </p>
+        </div>
+
+        <img
+            src="../assets/images/parmazip-draw.png"
+            alt=""
+            class="max-w-7xl pt-40 mx-auto mb-20 rounded-xl lg:-mt-40 dark:bg-gray-500 border shadow-xl"
+            data-aos="zoom-in"
+        />
+
+        <!-- HOW IT WORKS -->
+        <!-- CARDS HERE -->
+
+        <div class="max-w-7xl mx-auto dark:bg-gray-800 dark:text-gray-100">
+            <div class="flex flex-col md:flex-row justify-center mt-4">
+                <!--Card 1  -->
+                <div
+                    class="mx-2 w-full md:w-1/2 card card-compact w-96 border bg-white shadow-xl"
+                >
+                    <figure>
+                        <img
+                            src="../assets/images/parmazip-works-1.png"
+                            alt="Shoes"
+                        />
+                    </figure>
+                    <div class="card-body">
+                        <!-- <h2 class="card-title">Designed for Everyday Use</h2> -->
+
+                        <section
+                            class="dark:bg-gray-800 dark:text-gray-100 text-gray-700"
+                        >
+                            <div
+                                class="container px-4 mx-auto space-y-8 lg:max-w-3xl"
+                            >
+                                <h2 class="text-2xl font-bold md:text-3xl">
+                                    When the Patient is at Home.
+                                </h2>
+                                <div class="space-y-8">
+                                    <div>
+                                        <!-- <h3 class="mb-3 text-lg font-bold md:text-xl">2021</h3> -->
+                                        <ul class="space-y-4">
+                                            <li class="space-y-1">
+                                                <div
+                                                    class="flex items-center space-x-2"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 512 512"
+                                                        class="w-4 h-4 fill-current dark:text-violet-400"
+                                                    >
+                                                        <path
+                                                            d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
+                                                        ></path>
+                                                        <polygon
+                                                            points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
+                                                        ></polygon>
+                                                    </svg>
+                                                    <h4
+                                                        class="text-xl font-medium"
+                                                    >
+                                                        Patient books a
+                                                        consultation with a
+                                                        pharmacist.
+                                                    </h4>
+                                                </div>
+                                                <p
+                                                    class="ml-7 dark:text-gray-400"
+                                                >
+                                                    More details here.
+                                                </p>
+                                            </li>
+                                            <li class="space-y-1">
+                                                <div
+                                                    class="flex items-center space-x-2"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 512 512"
+                                                        class="w-4 h-4 fill-current dark:text-violet-400"
+                                                    >
+                                                        <path
+                                                            d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
+                                                        ></path>
+                                                        <polygon
+                                                            points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
+                                                        ></polygon>
+                                                    </svg>
+                                                    <h4
+                                                        class="text-xl font-medium"
+                                                    >
+                                                        Pharmacist consults and
+                                                        provides prescription.
+                                                    </h4>
+                                                </div>
+                                                <p
+                                                    class="ml-7 dark:text-gray-400"
+                                                >
+                                                    More details here.
+                                                </p>
+                                            </li>
+                                            <li class="space-y-1">
+                                                <div
+                                                    class="flex items-center space-x-2"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 512 512"
+                                                        class="w-4 h-4 fill-current dark:text-violet-400"
+                                                    >
+                                                        <path
+                                                            d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
+                                                        ></path>
+                                                        <polygon
+                                                            points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
+                                                        ></polygon>
+                                                    </svg>
+                                                    <h4
+                                                        class="text-xl font-medium"
+                                                    >
+                                                        Prescription is sent to
+                                                        preferred pharmacy.
+                                                    </h4>
+                                                </div>
+                                                <p
+                                                    class="ml-7 dark:text-gray-400"
+                                                >
+                                                    More details here.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="mx-2 w-full md:w-1/2 card card-compact w-96 border bg-white shadow-xl"
+                >
+                    <figure>
+                        <img
+                            src="../assets/images/parmazip-works-2.png"
+                            alt="Shoes"
+                        />
+                    </figure>
+                    <div class="card-body">
+                        <!-- <h2 class="card-title">Partner with Dedicated Pharmacists</h2> -->
+                        <section
+                            class="dark:bg-gray-800 dark:text-gray-100 text-gray-700"
+                        >
+                            <div
+                                class="container px-4 mx-auto space-y-8 lg:max-w-3xl"
+                            >
+                                <h2 class="text-2xl font-bold md:text-3xl">
+                                    When the Patient is at the Pharmacy.
+                                </h2>
+                                <div class="space-y-8">
+                                    <div>
+                                        <!-- <h3 class="mb-3 text-lg font-bold md:text-xl">2021</h3> -->
+                                        <ul class="space-y-4">
+                                            <li class="space-y-1">
+                                                <div
+                                                    class="flex items-center space-x-2"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 512 512"
+                                                        class="w-4 h-4 fill-current dark:text-violet-400"
+                                                    >
+                                                        <path
+                                                            d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
+                                                        ></path>
+                                                        <polygon
+                                                            points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
+                                                        ></polygon>
+                                                    </svg>
+                                                    <h4
+                                                        class="text-xl font-medium"
+                                                    >
+                                                        Patient visits the
+                                                        pharmacy and registers
+                                                        in the telehealth kiosk.
+                                                    </h4>
+                                                </div>
+                                                <p
+                                                    class="ml-7 dark:text-gray-400"
+                                                >
+                                                    More details here.
+                                                </p>
+                                            </li>
+                                            <li class="space-y-1">
+                                                <div
+                                                    class="flex items-center space-x-2"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 512 512"
+                                                        class="w-4 h-4 fill-current dark:text-violet-400"
+                                                    >
+                                                        <path
+                                                            d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
+                                                        ></path>
+                                                        <polygon
+                                                            points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
+                                                        ></polygon>
+                                                    </svg>
+                                                    <h4
+                                                        class="text-xl font-medium"
+                                                    >
+                                                        Pharmacist consults and
+                                                        provides prescription.
+                                                    </h4>
+                                                </div>
+                                                <p
+                                                    class="ml-7 dark:text-gray-400"
+                                                >
+                                                    More details here.
+                                                </p>
+                                            </li>
+                                            <li class="space-y-1">
+                                                <div
+                                                    class="flex items-center space-x-2"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 512 512"
+                                                        class="w-4 h-4 fill-current dark:text-violet-400"
+                                                    >
+                                                        <path
+                                                            d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
+                                                        ></path>
+                                                        <polygon
+                                                            points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
+                                                        ></polygon>
+                                                    </svg>
+                                                    <h4
+                                                        class="text-xl font-medium"
+                                                    >
+                                                        Patient receives the
+                                                        prescribed medications.
+                                                    </h4>
+                                                </div>
+                                                <p
+                                                    class="ml-7 dark:text-gray-400"
+                                                >
+                                                    More details here.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRODUCING EASYJOEY -->
+    <section class="dark:bg-gray-800 dark:text-gray-100 bg-white text-gray-800">
+        <div class="container max-w-xl mx-auto p-6 lg:max-w-7xl">
+            <div class="text-center">
+                <h2
+                    class="text-3xl mt-20 font-bold tracki sm:text-5xl dark:text-gray-50 font-inter"
+                >
+                    True Data Freedom.
+                </h2>
+                <p
+                    class="max-w-4xl mx-auto mt-4 text-xl dark:text-gray-400 font-inter"
+                >
+                    With Parmazip, you control the software, you own your data.
+                    Total Autonomy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- huge image -->
+    <section class="bg-white py-2">
         <div>
-          <span class="footer-title">Services</span>
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
+            <img
+                src="../assets/images/parmazip-face.png"
+                alt=""
+                class="w-3/4 mx-auto mb-12 rounded-3xl shadow-md lg:mt-10 dark:bg-gray-500"
+            />
         </div>
-        <div>
-          <span class="footer-title">Company</span>
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </div>
-        <div>
-          <span class="footer-title">Legal</span>
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
-        </div>
-      </footer>
-      <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
-        <div class="items-center grid-flow-col">
-          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
-          <p>ACME Industries Ltd. <br/>Providing reliable tech since 1992</p>
-        </div>
-        <div class="md:place-self-center md:justify-self-end">
-          <div class="grid grid-flow-col gap-4">
-            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
-            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
-            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </generic-panel>
 
-  <generic-panel>
-    <div class="flex flex-col">
-      <h1 class="md:text-xl mb-5 font-bold">And more components...</h1>
-      <p>Visit the official <a href="https://daisyui.com/docs/install/" target="_blank" class="text-primary">Daisy UI documentation</a>.</p>
-    </div>
-  </generic-panel>
+        <div
+            class="container flex flex-col items-center px-4 py-16 pb-8 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 bg-white"
+        >
+            <h1
+                class="-mt-10 font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter text-gray-800"
+            >
+                Can't wait? Let's have coffee.
+            </h1>
+            <p
+                class="max-w-5xl mx-auto mt-4 text-xl dark:text-gray-400 font-inter text-gray-500"
+            >
+                We'd love to talk to you'.
+            </p>
 
+            <!-- button -->
+            <div class="flex flex-wrap items-center justify-center mt-20">
+                <input
+                    type="text"
+                    placeholder="Your email address"
+                    class="input bg-white border-1 border-gray-600 w-full max-w-xs md:w-auto"
+                />
+                <button
+                    type="button"
+                    class="ml-2 px-8 py-3 text-lg border-1 text-white bg-red-400 rounded dark:text-gray-300"
+                >
+                    Join Waitlist
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- OTHERS -->
+
+    <!-- FOOTER -->
+
+    <div class="dark:bg-gray-800 dark:text-gray-100 my-30">
+        <footer class="px-4 divide-y dark:bg-gray-800 dark:text-gray-100">
+            <div
+                class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0"
+            >
+                <div class="lg:w-1/3">
+                    <a
+                        rel="noopener noreferrer"
+                        href="#"
+                        class="flex justify-center space-x-3 lg:justify-start"
+                    >
+                        <div
+                            class="flex items-left justify-left h-10 rounded-full dark:bg-default-400"
+                        >
+                            <a
+                                rel="noopener noreferrer"
+                                href="#"
+                                aria-label="Back to homepage"
+                                class="flex items-center"
+                            >
+                                <img
+                                    src="../assets/images/parmazip-logo.png"
+                                    alt="Your Logo"
+                                    class="object-contain h-10 mt-1 w-auto dark:text-default-400"
+                                />
+                            </a>
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="flex-shrink-0 w-5 h-5 rounded-full dark:text-gray-900">
+							<path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
+						</svg> -->
+                        </div>
+                        <!-- <span class="self-center text-2xl font-semibold">EasyJoey</span> -->
+                    </a>
+                </div>
+                <div
+                    class="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4"
+                >
+                    <div class="space-y-3">
+                        <h3 class="tracki uppercase dark:text-gray-50">
+                            Product
+                        </h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <a rel="noopener noreferrer" href="#"
+                                    >Features</a
+                                >
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#"
+                                    >Integrations</a
+                                >
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#"
+                                    >Pricing</a
+                                >
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="tracki uppercase dark:text-gray-50">
+                            Company
+                        </h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <a rel="noopener noreferrer" href="#"
+                                    >Privacy</a
+                                >
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#"
+                                    >Terms of Service</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-3">
+                        <h3 class="uppercase dark:text-gray-50">Developers</h3>
+                        <ul class="space-y-1">
+                            <li>
+                                <a rel="noopener noreferrer" href="#"
+                                    >Public API</a
+                                >
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#"
+                                    >Documentation</a
+                                >
+                            </li>
+                            <li>
+                                <a rel="noopener noreferrer" href="#">Guides</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="uppercase dark:text-gray-50">
+                            Social media
+                        </div>
+                        <div class="flex justify-start space-x-3">
+                            <a
+                                rel="noopener noreferrer"
+                                href="#"
+                                title="Facebook"
+                                class="flex items-center p-1"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    viewBox="0 0 32 32"
+                                    class="w-5 h-5 fill-current"
+                                >
+                                    <path
+                                        d="M32 16c0-8.839-7.167-16-16-16-8.839 0-16 7.161-16 16 0 7.984 5.849 14.604 13.5 15.803v-11.177h-4.063v-4.625h4.063v-3.527c0-4.009 2.385-6.223 6.041-6.223 1.751 0 3.584 0.312 3.584 0.312v3.937h-2.021c-1.984 0-2.604 1.235-2.604 2.5v3h4.437l-0.713 4.625h-3.724v11.177c7.645-1.199 13.5-7.819 13.5-15.803z"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                rel="noopener noreferrer"
+                                href="#"
+                                title="Twitter"
+                                class="flex items-center p-1"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="w-5 h-5 fill-current"
+                                >
+                                    <path
+                                        d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                rel="noopener noreferrer"
+                                href="#"
+                                title="Instagram"
+                                class="flex items-center p-1"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32"
+                                    fill="currentColor"
+                                    class="w-5 h-5 fill-current"
+                                >
+                                    <path
+                                        d="M16 0c-4.349 0-4.891 0.021-6.593 0.093-1.709 0.084-2.865 0.349-3.885 0.745-1.052 0.412-1.948 0.959-2.833 1.849-0.891 0.885-1.443 1.781-1.849 2.833-0.396 1.020-0.661 2.176-0.745 3.885-0.077 1.703-0.093 2.244-0.093 6.593s0.021 4.891 0.093 6.593c0.084 1.704 0.349 2.865 0.745 3.885 0.412 1.052 0.959 1.948 1.849 2.833 0.885 0.891 1.781 1.443 2.833 1.849 1.020 0.391 2.181 0.661 3.885 0.745 1.703 0.077 2.244 0.093 6.593 0.093s4.891-0.021 6.593-0.093c1.704-0.084 2.865-0.355 3.885-0.745 1.052-0.412 1.948-0.959 2.833-1.849 0.891-0.885 1.443-1.776 1.849-2.833 0.391-1.020 0.661-2.181 0.745-3.885 0.077-1.703 0.093-2.244 0.093-6.593s-0.021-4.891-0.093-6.593c-0.084-1.704-0.355-2.871-0.745-3.885-0.412-1.052-0.959-1.948-1.849-2.833-0.885-0.891-1.776-1.443-2.833-1.849-1.020-0.396-2.181-0.661-3.885-0.745-1.703-0.077-2.244-0.093-6.593-0.093zM16 2.88c4.271 0 4.781 0.021 6.469 0.093 1.557 0.073 2.405 0.333 2.968 0.553 0.751 0.291 1.276 0.635 1.844 1.197 0.557 0.557 0.901 1.088 1.192 1.839 0.22 0.563 0.48 1.411 0.553 2.968 0.072 1.688 0.093 2.199 0.093 6.469s-0.021 4.781-0.099 6.469c-0.084 1.557-0.344 2.405-0.563 2.968-0.303 0.751-0.641 1.276-1.199 1.844-0.563 0.557-1.099 0.901-1.844 1.192-0.556 0.22-1.416 0.48-2.979 0.553-1.697 0.072-2.197 0.093-6.479 0.093s-4.781-0.021-6.48-0.099c-1.557-0.084-2.416-0.344-2.979-0.563-0.76-0.303-1.281-0.641-1.839-1.199-0.563-0.563-0.921-1.099-1.197-1.844-0.224-0.556-0.48-1.416-0.563-2.979-0.057-1.677-0.084-2.197-0.084-6.459 0-4.26 0.027-4.781 0.084-6.479 0.083-1.563 0.339-2.421 0.563-2.979 0.276-0.761 0.635-1.281 1.197-1.844 0.557-0.557 1.079-0.917 1.839-1.199 0.563-0.219 1.401-0.479 2.964-0.557 1.697-0.061 2.197-0.083 6.473-0.083zM16 7.787c-4.541 0-8.213 3.677-8.213 8.213 0 4.541 3.677 8.213 8.213 8.213 4.541 0 8.213-3.677 8.213-8.213 0-4.541-3.677-8.213-8.213-8.213zM16 21.333c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333zM26.464 7.459c0 1.063-0.865 1.921-1.923 1.921-1.063 0-1.921-0.859-1.921-1.921 0-1.057 0.864-1.917 1.921-1.917s1.923 0.86 1.923 1.917z"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-6 text-sm text-center dark:text-gray-400">
+                © 2024 Parmazip. All rights reserved.
+            </div>
+        </footer>
+    </div>
 </template>
 
+<!-- SCRIPT STARTS -->
 <script>
-import { useHead } from '#app';
-import { definePageMeta } from '#imports';
-import GenericPanel from '~/components/commons/GenericPanel';
-import ogBanner from '../assets/images/nuxtwind-daisy-og-banner.jpg';
+import { useHead } from "#app";
+import { definePageMeta } from "#imports";
+import GenericPanel from "~/components/commons/GenericPanel";
+import ogBanner from "../assets/images/nuxtwind-daisy-og-banner.jpg";
 
 export default {
-  components: {
-    GenericPanel,
-  },
-  setup () {
-    definePageMeta({
-      layout: 'default',
-    });
+    name: "Hero",
+    components: {
+        GenericPanel,
+    },
+    setup() {
+        definePageMeta({
+            layout: "default",
+        });
 
-    useHead({
-      title: 'Nuxtwind Daisy 🟢💨🌼',
-      description: 'Nuxtwind Daisy is a starter template for Nuxt.js 3 + Tailwind CSS + Daisy UI with additional installed setup for custom font, icons, animation, and more.',
-      link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
-      ],
-      meta: [
-        {
-          hid: 'og:image',
-          name: 'og:image',
-          property: 'og:image',
-          content: ogBanner,
+        useHead({
+            title: "EasyJoey",
+            description:
+                "EasyJoey is the first and only local-first health records management system.",
+            link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+            meta: [
+                {
+                    hid: "og:image",
+                    name: "og:image",
+                    property: "og:image",
+                    content: ogBanner,
+                },
+            ],
+        });
+
+        return {};
+    },
+    name: "typeWiriter",
+    data: () => {
+        return {
+            typeValue: "",
+            typeStatus: false,
+            displayTextArray: [
+                "For Canadian Pharmacies",
+                "It's Secure",
+                "Truly Private",
+                "It's Encrypted",
+            ],
+            typingSpeed: 100,
+            erasingSpeed: 100,
+            newTextDelay: 2000,
+            displayTextArrayIndex: 0,
+            charIndex: 0,
+        };
+    },
+    props: {},
+    created() {
+        setTimeout(this.typeText, this.newTextDelay + 200);
+    },
+    methods: {
+        typeText() {
+            if (
+                this.charIndex <
+                this.displayTextArray[this.displayTextArrayIndex].length
+            ) {
+                if (!this.typeStatus) this.typeStatus = true;
+                this.typeValue += this.displayTextArray[
+                    this.displayTextArrayIndex
+                ].charAt(this.charIndex);
+                this.charIndex += 1;
+                setTimeout(this.typeText, this.typingSpeed);
+            } else {
+                this.typeStatus = false;
+                setTimeout(this.eraseText, this.newTextDelay);
+            }
         },
-      ],
-    });
-
-    return {};
-  },
+        eraseText() {
+            if (this.charIndex > 0) {
+                if (!this.typeStatus) this.typeStatus = true;
+                this.typeValue = this.displayTextArray[
+                    this.displayTextArrayIndex
+                ].substring(0, this.charIndex - 1);
+                this.charIndex -= 1;
+                setTimeout(this.eraseText, this.erasingSpeed);
+            } else {
+                this.typeStatus = false;
+                this.displayTextArrayIndex += 1;
+                if (this.displayTextArrayIndex >= this.displayTextArray.length)
+                    this.displayTextArrayIndex = 0;
+                setTimeout(this.typeText, this.typingSpeed + 1000);
+            }
+        },
+    },
 };
 </script>
+
+<style scoped>
+/* type of font */
+.font-inter {
+    font-family: "Inter", sans-serif; /* Replace 'Inter' with your font's name if different */
+}
+
+.font-courier {
+    font-family: "Courier", monospace;
+}
+
+/* easyjoey logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px; /* Adjust the margin as needed */
+    margin-top: -80px;
+}
+
+/* Style for the logo */
+.logo {
+    max-width: 100px; /* Set the maximum width of your logo */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* font animation container */
+.custom-container {
+    /* width: 100%;
+  height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-heading {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+/* animation blinking */
+.custom-heading .typed-text {
+    color: #f44336;
+}
+
+.blinking-cursor {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+@keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #2c3e50;
+    }
+}
+@-moz-keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #2c3e50;
+    }
+}
+@-webkit-keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #2c3e50;
+    }
+}
+@-ms-keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #2c3e50;
+    }
+}
+@-o-keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #2c3e50;
+    }
+}
+/* end of animation blinking */
+</style>

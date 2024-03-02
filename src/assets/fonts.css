@@ -1,0 +1,15 @@
+/* Import the Courier font from your font files */
+@font-face {
+    font-family: 'Courier';
+    src: url('~@/assets/fonts/courier/CourierPrime-Regular.ttf') format('ttf'); /* Update the path to your font file */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'Courier';
+    src: url('~@/assets/fonts/inter/Inter-Regular.ttf') format('ttf'); /* Update the path to your font file */
+    font-weight: normal;
+    font-style: normal;
+  }

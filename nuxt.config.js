@@ -82,4 +82,10 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+
+  css: [
+    // ...
+    '@/assets/fonts.css', // Add this line to import the fonts.css file
+  ],
+  
 });
