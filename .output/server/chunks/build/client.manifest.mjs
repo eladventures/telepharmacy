@@ -4,7 +4,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "error-404.01FzxTXL.js",
+    "file": "error-404.DeIfhkey.js",
     "src": "../node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -23,7 +23,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "error-500.DEHgCiLZ.js",
+    "file": "error-500.CjXYSB-T.js",
     "src": "../node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -42,7 +42,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "entry.i9qLT3qG.js",
+    "file": "entry.CECCMocT.js",
     "src": "../node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
     "dynamicImports": [
@@ -62,12 +62,12 @@ const client_manifest = {
     "prefetch": true,
     "preload": true
   },
-  "_parmazip-logo.Bcmucj7j.js": {
+  "_parmazip-logo.DDwmZ8_R.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "parmazip-logo.Bcmucj7j.js",
+    "file": "parmazip-logo.DDwmZ8_R.js",
     "imports": [
       "../node_modules/nuxt/dist/app/entry.js"
     ],
@@ -156,11 +156,11 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "default.CTC6SSaf.js",
+    "file": "default.Cf2w6QGV.js",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_parmazip-logo.Bcmucj7j.js",
+      "_parmazip-logo.DDwmZ8_R.js",
       "../node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -169,7 +169,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "exclude-route.BYEZQboD.js",
+    "file": "exclude-route.DYzh2mva.js",
     "src": "middleware/exclude-route.js",
     "isDynamicEntry": true,
     "imports": [
@@ -181,12 +181,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "index.D7rY65L_.js",
+    "file": "index.C5UbyaKV.js",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "../node_modules/nuxt/dist/app/entry.js",
-      "_parmazip-logo.Bcmucj7j.js"
+      "_parmazip-logo.DDwmZ8_R.js"
     ],
     "css": [],
     "assets": [
