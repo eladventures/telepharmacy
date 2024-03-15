@@ -1,55 +1,27 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./node_modules/flowbite.{js,ts}'],
+  content: ["./node_modules/flowbite.{js,ts}"],
   theme: {
     extend: {
       colors: {
-        primary: '#843bd7',
+        primary: "#843bd7",
       },
       fontFamily: {
-        primary: ['Inter'],
+        primary: ["Inter"],
       },
     },
   },
   daisyui: {
-    // base: false,
     themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
+      "light", // Retain only 'light' or your custom theme that does not use dark mode
+      // Removed 'dark' and other themes to prevent them from being used
     ],
-
+    darkTheme: false, // Explicitly disable the dark theme
   },
   plugins: [
-    '@tailwindcss/forms',
-    '@tailwindcss/container-queries',
-    require('@tailwindcss/typography'),
-    require('daisyui'),
+    "@tailwindcss/forms",
+    "@tailwindcss/container-queries",
+    require("@tailwindcss/typography"),
+    require("daisyui"),
   ],
 };
