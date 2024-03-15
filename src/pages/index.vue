@@ -9,7 +9,7 @@
                     <!-- logo-center -->
                     <div class="logo-container">
                         <img
-                            src="../assets/images/parmazip-lady.png"
+                            src="../assets/images/parmazip-logo.png"
                             alt="Logo"
                             class="logo"
                         />
@@ -19,101 +19,58 @@
                     <h1
                         class="font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter"
                     >
-                        Supercharge your workflows with Privacy-First
-                        Telepharmacy.
+                        Supercharge your workflows with Telepharmacy AI.
                     </h1>
 
-                    <!--animation text here  -->
-                    <!-- animation source:  https://dev.to/gayathri_r/how-to-add-a-typewriter-animation-in-vuejs-43kj -->
-                    <div class="custom-container">
-                        <h1 class="custom-heading items-center font-inter">
-                            <span class="typed-text">{{ typeValue }}</span>
-                            <span class="blinking-cursor">|</span>
-                            <span class="cursor" :class="{ typing: typeStatus }"
-                                >&nbsp;</span
-                            >
-                        </h1>
-                    </div>
-
                     <p
-                        class="mb-0 text-2xl sm:mb-12 xl:max-w-2xl dark:text-gray-900 font-inter"
+                        class="mt-5 text-2xl sm:mb-12 xl:max-w-3xl dark:text-gray-900 font-inter"
                     >
-                        Easily setup your own Telepharmacy System. More minor
-                        ailment consultations and prescription
-                        counselings!<Input:t></Input:t>
+                        Make minor ailment consultations more efficient with
+                        Parmazip— the first AI-powered Telepharmacy tool that
+                        gets you out of the admin work and more onto patient
+                        care.<Input:t></Input:t>
                     </p>
                     <!-- button -->
                     <div
                         class="flex flex-wrap items-center justify-center -mt-5"
-                    >
-                        <input
-                            type="text"
-                            placeholder="Your email address"
-                            class="input bg-white border-1 border-gray-600 w-full max-w-xs md:w-auto"
-                        />
-                        <button
-                            type="button"
-                            class="ml-2 px-8 py-3 text-lg border-1 text-white bg-red-400 rounded dark:text-gray-300"
-                        >
-                            Join Waitlist
-                        </button>
-                    </div>
+                    ></div>
                 </div>
             </div>
+        </section>
 
-            <!-- <div class="container flex flex-col items-center px-4 py-16 mt-20 pb-8 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900">
-    <video src="../assets/images/easy-joey-1.mp4" autoplay loop muted class="max-w-5xl mx-auto mb-10 mt-80 rounded-3xl shadow-2xl lg:-mt-40 dark:bg-gray-700 border-0 border-gray-800"></video>
-  </div> -->
-
-            <img
-                src="../assets/images/parmazip-tele3.png"
-                alt=""
-                class="w-3/4 pt-40 mx-auto mb-20 rounded-lg lg:-mt-40 dark:bg-gray-500"
-                data-aos="zoom-in"
-            />
+        <section>
+            <div class="dark:bg-violet-400"></div>
+            <video
+                class="max-w-6xl mx-auto mt-5 lg:mt-5 dark:bg-gray-500 border-4 border-gray-700"
+                controls
+                autoplay
+                loop
+                muted
+            >
+                <source
+                    src="../assets/images/parmazip-tele-video.mp4"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
         </section>
 
         <!-- 2nd PANEL -->
-        <section class="bg-white mb-20">
-            <div
-                class="container flex flex-col items-center px-4 py-16 pb-8 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 bg-white"
-            >
-                <h1
-                    class="-mt-10 font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter text-gray-800"
-                >
-                    Your Own TelePharmacy
-                </h1>
-                <p
-                    class="max-w-5xl mx-auto mt-4 text-xl dark:text-gray-400 font-inter text-gray-500"
-                >
-                    Affordable robust telepharmacy setup right in your pharmacy.
-                </p>
-            </div>
-
+        <section class="bg-white mt-20">
             <!-- 3 Descriptions -->
             <!-- CARDS HERE -->
 
             <div
-                class="max-w-7xl mx-auto dark:bg-gray-800 dark:text-gray-100 text-white"
+                class="max-w-7xl mx-auto dark:bg-gray-800 dark:text-gray-100 text-gray-800"
             >
                 <div class="flex flex-col md:flex-row justify-center mt-4">
                     <!--Card 1  -->
-                    <div
-                        class="mx-2 w-full md:w-1/3 card card-compact w-96 bg-red-400 shadow-xl"
-                        ,
-                        data-aos="zoom-in"
-                    >
-                        <figure>
-                            <img
-                                src="../assets/images/parmazip-feature-1.png"
-                                alt="Shoes"
-                            />
-                        </figure>
+                    <div class="mx-5 w-full md:w-1/3 card card-compact w-96">
                         <div class="card-body">
-                            <h2 class="card-title">
+                            <h2 class="card-title text-xl">
                                 Designed for Everyday Use
                             </h2>
-                            <p>
+                            <p class="text-xl">
                                 Very easy interface that you can access anytime.
                                 Consult, prescribe, and document. That's it!
                             </p>
@@ -125,22 +82,14 @@
 
                     <!-- Card 2 -->
                     <div
-                        class="mx-2 w-full md:w-1/3 card card-compact w-96 bg-red-400 shadow-xl"
-                        ,
-                        data-aos="zoom-in"
+                        class="mx-5 w-full md:w-1/3 card card-compact w-96 text-gray-800"
                     >
-                        <figure>
-                            <img
-                                src="../assets/images/parmazip-feature-2.png"
-                                alt="Shoes"
-                            />
-                        </figure>
                         <div class="card-body">
-                            <h2 class="card-title">
+                            <h2 class="card-title text-xl">
                                 Partner with Dedicated Pharmacists
                             </h2>
-                            <p>
-                                Practive with confidence by partnering up with
+                            <p class="text-xl">
+                                Practice with confidence by partnering up with
                                 your trusted pharmacists anywhere in Canada.
                             </p>
                             <!-- <div class="card-actions justify-end">
@@ -151,21 +100,13 @@
 
                     <!-- Card 3 -->
                     <div
-                        class="mx-2 w-full md:w-1/3 card card-compact w-96 bg-red-400 shadow-xl"
-                        ,
-                        data-aos="zoom-in"
+                        class="mx-5 w-full md:w-1/3 card card-compact w-96 text-gray-800"
                     >
-                        <figure>
-                            <img
-                                src="../assets/images/parmazip-feature-3.png"
-                                alt="Shoes"
-                            />
-                        </figure>
                         <div class="card-body">
-                            <h2 class="card-title">
+                            <h2 class="card-title text-xl">
                                 Secure Telehealth Platform
                             </h2>
-                            <p>
+                            <p class="text-xl">
                                 Parmazip is built with data privacy and security
                                 at its core. Has end-to-end encryptuon. No data
                                 is stored in the cloud.
@@ -179,345 +120,296 @@
             </div>
         </section>
 
-        <!-- 3rd PANEL-->
-        <section class="bg-white pb-20">
+        <!-- Mobile video -->
+        <section class="dark:bg-gray-800 dark:text-gray-100">
             <div
-                class="container flex flex-col items-center px-4 py-16 pb-8 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 bg-white"
+                class="container max-w-xl p-6 py-12 mx-auto mt-20 space-y-24 lg:px-8 lg:max-w-7xl"
+            >
+                <div>
+                    <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+                        <div class="lg:col-start-2">
+                            <h3
+                                class="text-2xl font-bold tracking-tight sm:text-5xl dark:text-gray-50"
+                            >
+                                Patient-focused care with minor ailments AI
+                            </h3>
+
+                            <div class="mt-12 space-y-12">
+                                <div class="flex">
+                                    <div class="flex"></div>
+                                    <div>
+                                        <p
+                                            class="text-xl font-medium leading-6 text-gray-700 dark:text-gray-50 font-inter"
+                                        >
+                                            With Parmazip AI bot for minor
+                                            ailments, your patients can book
+                                            ahead of time and talk to a bot to
+                                            describe their symptoms, medical
+                                            history, drug history, and
+                                            allergies. All you have to do when
+                                            they get there is review what they
+                                            answered and start consulting!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"
+                                >
+                                    <a
+                                        rel="noopener noreferrer"
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLScW0Y_HX0KdZWMICk3EHOoQxHj0pl5TKR6s4tQK1IBTiN2tEQ/viewform"
+                                        target="_blank"
+                                        class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900 bg-red-400 text-white"
+                                        >Join the Waitlist</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1"
+                        >
+                            <video
+                                class="mx-auto rounded-3xl shadow-lg dark:bg-gray-500"
+                                width="450"
+                                height="auto"
+                                controls
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                            >
+                                <source
+                                    src="../assets/images/parmazip-mobile-video.mp4"
+                                    type="video/mp4"
+                                />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="dark:bg-violet-400">
+            <div
+                class="container flex flex-col items-center px-4 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 text-gray-900"
             >
                 <h1
-                    class="-mt-10 font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter text-gray-800"
+                    class="font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter"
                 >
                     How it works
                 </h1>
-                <p
-                    class="max-w-5xl mx-auto mt-4 text-xl dark:text-gray-400 font-inter text-gray-500"
-                >
-                    There are two ways the patient can consult with the
-                    pharmacist.
-                </p>
             </div>
+        </div>
 
-            <img
-                src="../assets/images/parmazip-draw.png"
-                alt=""
-                class="max-w-7xl pt-40 mx-auto mb-20 rounded-xl lg:-mt-40 dark:bg-gray-500 border shadow-xl"
-                data-aos="zoom-in"
-            />
+        <section class="flex items-center">
+            <div class="max-w-7xl mx-auto text-center">
+                <!-- Center justified images with text -->
+                <div class="flex justify-center mt-4">
+                    <div class="mx-2 w-1/3 text-left">
+                        <img
+                            src="../assets/images/parmazip-how-1.png"
+                            alt="Your Image Description"
+                            class="w-full rounded"
+                            data-aos="zoom-in"
+                        />
 
-            <!-- HOW IT WORKS -->
-            <!-- CARDS HERE -->
-
-            <div class="max-w-7xl mx-auto dark:bg-gray-800 dark:text-gray-100">
-                <div class="flex flex-col md:flex-row justify-center mt-4">
-                    <!--Card 1  -->
-                    <div
-                        class="mx-2 w-full md:w-1/2 card card-compact w-96 border bg-white shadow-xl"
-                    >
-                        <figure>
-                            <img
-                                src="../assets/images/parmazip-works-1.png"
-                                alt="Shoes"
-                            />
-                        </figure>
-                        <div class="card-body">
-                            <!-- <h2 class="card-title">Designed for Everyday Use</h2> -->
-
-                            <section
-                                class="dark:bg-gray-800 dark:text-gray-100 text-gray-700"
-                            >
-                                <div
-                                    class="container px-4 mx-auto space-y-8 lg:max-w-3xl"
-                                >
-                                    <h2 class="text-2xl font-bold md:text-3xl">
-                                        When the Patient is at Home.
-                                    </h2>
-                                    <div class="space-y-8">
-                                        <div>
-                                            <!-- <h3 class="mb-3 text-lg font-bold md:text-xl">2021</h3> -->
-                                            <ul class="space-y-4">
-                                                <li class="space-y-1">
-                                                    <div
-                                                        class="flex items-center space-x-2"
-                                                    >
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 512 512"
-                                                            class="w-4 h-4 fill-current dark:text-violet-400"
-                                                        >
-                                                            <path
-                                                                d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
-                                                            ></path>
-                                                            <polygon
-                                                                points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
-                                                            ></polygon>
-                                                        </svg>
-                                                        <h4
-                                                            class="text-xl font-medium"
-                                                        >
-                                                            Patient books a
-                                                            consultation with a
-                                                            pharmacist.
-                                                        </h4>
-                                                    </div>
-                                                    <p
-                                                        class="ml-7 dark:text-gray-400"
-                                                    >
-                                                        More details here.
-                                                    </p>
-                                                </li>
-                                                <li class="space-y-1">
-                                                    <div
-                                                        class="flex items-center space-x-2"
-                                                    >
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 512 512"
-                                                            class="w-4 h-4 fill-current dark:text-violet-400"
-                                                        >
-                                                            <path
-                                                                d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
-                                                            ></path>
-                                                            <polygon
-                                                                points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
-                                                            ></polygon>
-                                                        </svg>
-                                                        <h4
-                                                            class="text-xl font-medium"
-                                                        >
-                                                            Pharmacist consults
-                                                            and provides
-                                                            prescription.
-                                                        </h4>
-                                                    </div>
-                                                    <p
-                                                        class="ml-7 dark:text-gray-400"
-                                                    >
-                                                        More details here.
-                                                    </p>
-                                                </li>
-                                                <li class="space-y-1">
-                                                    <div
-                                                        class="flex items-center space-x-2"
-                                                    >
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 512 512"
-                                                            class="w-4 h-4 fill-current dark:text-violet-400"
-                                                        >
-                                                            <path
-                                                                d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
-                                                            ></path>
-                                                            <polygon
-                                                                points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
-                                                            ></polygon>
-                                                        </svg>
-                                                        <h4
-                                                            class="text-xl font-medium"
-                                                        >
-                                                            Prescription is sent
-                                                            to preferred
-                                                            pharmacy.
-                                                        </h4>
-                                                    </div>
-                                                    <p
-                                                        class="ml-7 dark:text-gray-400"
-                                                    >
-                                                        More details here.
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
+                        <p class="text-xl font-inter text-center">
+                            Your patient books an appointment with your pharmacy
+                        </p>
                     </div>
 
-                    <!-- Card 2 -->
-                    <div
-                        class="mx-2 w-full md:w-1/2 card card-compact w-96 border bg-white shadow-xl"
-                    >
-                        <figure>
-                            <img
-                                src="../assets/images/parmazip-works-2.png"
-                                alt="Shoes"
-                            />
-                        </figure>
-                        <div class="card-body">
-                            <!-- <h2 class="card-title">Partner with Dedicated Pharmacists</h2> -->
-                            <section
-                                class="dark:bg-gray-800 dark:text-gray-100 text-gray-700"
-                            >
-                                <div
-                                    class="container px-4 mx-auto space-y-8 lg:max-w-3xl"
-                                >
-                                    <h2 class="text-2xl font-bold md:text-3xl">
-                                        When the Patient is at the Pharmacy.
-                                    </h2>
-                                    <div class="space-y-8">
-                                        <div>
-                                            <!-- <h3 class="mb-3 text-lg font-bold md:text-xl">2021</h3> -->
-                                            <ul class="space-y-4">
-                                                <li class="space-y-1">
-                                                    <div
-                                                        class="flex items-center space-x-2"
-                                                    >
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 512 512"
-                                                            class="w-4 h-4 fill-current dark:text-violet-400"
-                                                        >
-                                                            <path
-                                                                d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
-                                                            ></path>
-                                                            <polygon
-                                                                points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
-                                                            ></polygon>
-                                                        </svg>
-                                                        <h4
-                                                            class="text-xl font-medium"
-                                                        >
-                                                            Patient visits the
-                                                            pharmacy and
-                                                            registers in the
-                                                            telehealth kiosk.
-                                                        </h4>
-                                                    </div>
-                                                    <p
-                                                        class="ml-7 dark:text-gray-400"
-                                                    >
-                                                        More details here.
-                                                    </p>
-                                                </li>
-                                                <li class="space-y-1">
-                                                    <div
-                                                        class="flex items-center space-x-2"
-                                                    >
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 512 512"
-                                                            class="w-4 h-4 fill-current dark:text-violet-400"
-                                                        >
-                                                            <path
-                                                                d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
-                                                            ></path>
-                                                            <polygon
-                                                                points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
-                                                            ></polygon>
-                                                        </svg>
-                                                        <h4
-                                                            class="text-xl font-medium"
-                                                        >
-                                                            Pharmacist consults
-                                                            and provides
-                                                            prescription.
-                                                        </h4>
-                                                    </div>
-                                                    <p
-                                                        class="ml-7 dark:text-gray-400"
-                                                    >
-                                                        More details here.
-                                                    </p>
-                                                </li>
-                                                <li class="space-y-1">
-                                                    <div
-                                                        class="flex items-center space-x-2"
-                                                    >
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 512 512"
-                                                            class="w-4 h-4 fill-current dark:text-violet-400"
-                                                        >
-                                                            <path
-                                                                d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"
-                                                            ></path>
-                                                            <polygon
-                                                                points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
-                                                            ></polygon>
-                                                        </svg>
-                                                        <h4
-                                                            class="text-xl font-medium"
-                                                        >
-                                                            Patient receives the
-                                                            prescribed
-                                                            medications.
-                                                        </h4>
-                                                    </div>
-                                                    <p
-                                                        class="ml-7 dark:text-gray-400"
-                                                    >
-                                                        More details here.
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
+                    <div class="mx-2 w-1/3 text-left">
+                        <img
+                            src="../assets/images/parmazip-how-2.png"
+                            alt="Your Image Description"
+                            class="w-full rounded"
+                            data-aos="zoom-in"
+                        />
+
+                        <p class="text-xl font-inter text-center">
+                            Your telepharmacist will provide virtual
+                            consultation and treatment plan
+                        </p>
+                    </div>
+
+                    <div class="mx-2 w-1/3 text-left">
+                        <img
+                            src="../assets/images/parmazip-how-3.png"
+                            alt="Your Image Description"
+                            class="w-full rounded"
+                            data-aos="zoom-in"
+                        />
+
+                        <p class="text-xl font-inter text-center">
+                            Your pharmacy receives the digital prescriptions for
+                            dispensing
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- INTRODUCING EASYJOEY -->
-        <section
-            class="dark:bg-gray-800 dark:text-gray-100 bg-white text-gray-800"
-        >
-            <div class="container max-w-xl mx-auto p-6 lg:max-w-7xl">
-                <div class="text-center">
-                    <h2
-                        class="text-3xl mt-20 font-bold tracki sm:text-5xl dark:text-gray-50 font-inter"
-                    >
-                        True Data Freedom.
-                    </h2>
-                    <p
-                        class="max-w-4xl mx-auto mt-4 text-xl dark:text-gray-400 font-inter"
-                    >
-                        With Parmazip, you control the software, you own your
-                        data. Total Autonomy.
-                    </p>
-                </div>
-            </div>
-        </section>
+        <!-- What happens -->
 
-        <!-- huge image -->
-        <section class="bg-white py-2">
-            <div>
-                <img
-                    src="../assets/images/parmazip-face.png"
-                    alt=""
-                    class="w-3/4 mx-auto mb-12 rounded-3xl shadow-md lg:mt-10 dark:bg-gray-500"
-                />
-            </div>
-
+        <div class="dark:bg-violet-400">
             <div
-                class="container flex flex-col items-center px-4 py-16 pb-8 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 bg-white"
+                class="container flex flex-col items-center px-4 mt-10 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 text-gray-900"
             >
                 <h1
-                    class="-mt-10 font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter text-gray-800"
+                    class="font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter"
                 >
-                    Can't wait? Let's have coffee.
+                    What happens when you use telehealth in your pharmacy?
                 </h1>
-                <p
-                    class="max-w-5xl mx-auto mt-4 text-xl dark:text-gray-400 font-inter text-gray-500"
-                >
-                    We'd love to talk to you'.
-                </p>
+            </div>
+        </div>
 
-                <!-- button -->
-                <div class="flex flex-wrap items-center justify-center mt-20">
-                    <input
-                        type="text"
-                        placeholder="Your email address"
-                        class="input bg-white border-1 border-gray-600 w-full max-w-xs md:w-auto"
-                    />
-                    <button
-                        type="button"
-                        class="ml-2 px-8 py-3 text-lg border-1 text-white bg-red-400 rounded dark:text-gray-300"
-                    >
-                        Join Waitlist
-                    </button>
+        <section class="flex items-center">
+            <div class="max-w-7xl mx-auto text-center mb-20">
+                <!-- Center justified images with text -->
+                <div class="flex justify-center mt-4">
+                    <div class="mx-5 w-1/4 text-left">
+                        <img
+                            src="../assets/images/parmazip-benefit-1.png"
+                            alt="Your Image Description"
+                            class="w-full rounded"
+                            data-aos="zoom-in"
+                        />
+                        <h2
+                            class="text-xl font-bold mt-2 mb-5 font-inter text-center"
+                        >
+                            Increased foot traffic
+                        </h2>
+
+                        <p class="text-xl font-inter text-center">
+                            More consultations that can be done remotely mean
+                            more patients ready to purchase.
+                        </p>
+                    </div>
+
+                    <div class="mx-5 w-1/4 text-left">
+                        <img
+                            src="../assets/images/parmazip-benefit-2.png"
+                            alt="Your Image Description"
+                            class="w-full rounded"
+                            data-aos="zoom-in"
+                        />
+                        <h2
+                            class="text-xl font-bold mt-2 mb-5 font-inter text-center"
+                        >
+                            Improved workflows
+                        </h2>
+
+                        <p class="text-xl font-inter text-center">
+                            With virtual pharmacists on call, your staff
+                            pharmacist can focus more on their primary
+                            activities.
+                        </p>
+                    </div>
+
+                    <div class="mx-5 w-1/4 text-left">
+                        <img
+                            src="../assets/images/parmazip-benefit-3.png"
+                            alt="Your Image Description"
+                            class="w-full rounded"
+                            data-aos="zoom-in"
+                        />
+                        <h2
+                            class="text-xl font-bold mt-2 mb-5 font-inter text-center"
+                        >
+                            Boost your brand
+                        </h2>
+
+                        <p class="text-xl font-inter text-center">
+                            Be one of the pioneer independent telepharmacy
+                            businesses in Canada that patients trust.
+                        </p>
+                    </div>
+                    <div class="mx-5 w-1/4 text-left">
+                        <img
+                            src="../assets/images/parmazip-benefit-4.png"
+                            alt="Your Image Description"
+                            class="w-full rounded"
+                            data-aos="zoom-in"
+                        />
+                        <h2
+                            class="text-xl font-bold mt-2 mb-5 font-inter text-center"
+                        >
+                            More flexible time
+                        </h2>
+
+                        <p class="text-xl font-inter text-center">
+                            Communicate with more pharmacists who are available
+                            whenever you aren’t.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- talk to trista -->
+        <section class="dark:bg-gray-800 dark:text-gray-100 bg-red-200 mt-20">
+            <div
+                class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl"
+            >
+                <div>
+                    <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
+                        <div class="lg:col-start-2">
+                            <h3
+                                class="text-2xl font-bold tracking-tight sm:text-5xl dark:text-gray-50"
+                            >
+                                Can't wait?<br />
+                                Let's have coffee.
+                            </h3>
+
+                            <div class="mt-12 space-y-12">
+                                <div class="flex">
+                                    <div class="flex"></div>
+                                    <div>
+                                        <h4
+                                            class="text-lg font-medium leading-6 dark:text-gray-50"
+                                        >
+                                            One of our co-founders, Trista,
+                                            roams around Ontario to talk with
+                                            pharmacy owners and pharmacists to
+                                            make sure what we’re doing is
+                                            something that you will love to use
+                                            everyday. <br /><br />As we're
+                                            polishing this awesome telehealth
+                                            app that will change the Canadian
+                                            pharmacy space, we're in search for
+                                            pharmacists and pharmacy owners who
+                                            are really, really willing enough to
+                                            get started and give us brutal,
+                                            honest feedback on how we're doing.
+                                            <br /><br />Sounds like you?
+                                            Perfect—coffee is on us!
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"
+                                >
+                                    <a
+                                        rel="noopener noreferrer"
+                                        href="https://calendly.com/parmazip-trista/talk"
+                                        target="_blank"
+                                        class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900 bg-red-400 text-white"
+                                        >Talk to Trista</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1"
+                        >
+                            <img
+                                src="../assets/images/parmazip-trista.png"
+                                alt=""
+                                class="mx-auto dark:bg-gray-500"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -526,171 +418,76 @@
 
         <!-- FOOTER -->
 
+        <!-- FOOTER -->
+
         <div class="dark:bg-gray-800 dark:text-gray-100 my-30">
-            <footer class="px-4 divide-y dark:bg-gray-800 dark:text-gray-100">
-                <div
-                    class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0"
+            <footer class="footer items-center p-4 text-neutral-content px-40">
+                <aside class="items-center grid-flow-col">
+                    <img
+                        src="../assets/images/parmazip-logo-long.png"
+                        alt="Your Logo"
+                        class="object-contain h-10 mt-1 w-auto dark:text-default-400"
+                    />
+                    <!-- <p>EMPOWERING COMMUNITY PHARMACIES THROUGH TECHNOLOGY</p> -->
+                </aside>
+                <nav
+                    class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"
                 >
-                    <div class="lg:w-1/3">
-                        <a
-                            rel="noopener noreferrer"
-                            href="#"
-                            class="flex justify-center space-x-3 lg:justify-start"
+                    <a href="https://twitter.com/ParmaZip" target="blank">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="fill-current"
                         >
-                            <div
-                                class="flex items-left justify-left h-10 rounded-full dark:bg-default-400"
-                            >
-                                <a
-                                    rel="noopener noreferrer"
-                                    href="#"
-                                    aria-label="Back to homepage"
-                                    class="flex items-center"
-                                >
-                                    <img
-                                        src="../assets/images/parmazip-logo-long.png"
-                                        alt="Your Logo"
-                                        class="object-contain h-10 mt-1 w-auto dark:text-default-400"
-                                    />
-                                </a>
-                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="flex-shrink-0 w-5 h-5 rounded-full dark:text-gray-900">
-							<path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
-						</svg> -->
-                            </div>
-                            <!-- <span class="self-center text-2xl font-semibold">EasyJoey</span> -->
-                        </a>
-                    </div>
-                    <div
-                        class="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4"
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                            />
+                        </svg>
+                    </a>
+                    <a
+                        href="https://www.facebook.com/parmazip/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        <div class="space-y-3">
-                            <h3 class="tracki uppercase dark:text-gray-50">
-                                Product
-                            </h3>
-                            <ul class="space-y-1">
-                                <li>
-                                    <a rel="noopener noreferrer" href="#"
-                                        >Features</a
-                                    >
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" href="#"
-                                        >Integrations</a
-                                    >
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" href="#"
-                                        >Pricing</a
-                                    >
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" href="#"
-                                        >FAQ</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="space-y-3">
-                            <h3 class="tracki uppercase dark:text-gray-50">
-                                Company
-                            </h3>
-                            <ul class="space-y-1">
-                                <li>
-                                    <a rel="noopener noreferrer" href="#"
-                                        >Privacy</a
-                                    >
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" href="#"
-                                        >Terms of Service</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="space-y-3">
-                            <h3 class="uppercase dark:text-gray-50">
-                                Developers
-                            </h3>
-                            <ul class="space-y-1">
-                                <li>
-                                    <a rel="noopener noreferrer" href="#"
-                                        >Public API</a
-                                    >
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" href="#"
-                                        >Documentation</a
-                                    >
-                                </li>
-                                <li>
-                                    <a rel="noopener noreferrer" href="#"
-                                        >Guides</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="space-y-3">
-                            <div class="uppercase dark:text-gray-50">
-                                Social media
-                            </div>
-                            <div class="flex justify-start space-x-3">
-                                <a
-                                    rel="noopener noreferrer"
-                                    href="#"
-                                    title="Facebook"
-                                    class="flex items-center p-1"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        fill="currentColor"
-                                        viewBox="0 0 32 32"
-                                        class="w-5 h-5 fill-current"
-                                    >
-                                        <path
-                                            d="M32 16c0-8.839-7.167-16-16-16-8.839 0-16 7.161-16 16 0 7.984 5.849 14.604 13.5 15.803v-11.177h-4.063v-4.625h4.063v-3.527c0-4.009 2.385-6.223 6.041-6.223 1.751 0 3.584 0.312 3.584 0.312v3.937h-2.021c-1.984 0-2.604 1.235-2.604 2.5v3h4.437l-0.713 4.625h-3.724v11.177c7.645-1.199 13.5-7.819 13.5-15.803z"
-                                        ></path>
-                                    </svg>
-                                </a>
-                                <a
-                                    rel="noopener noreferrer"
-                                    href="#"
-                                    title="Twitter"
-                                    class="flex items-center p-1"
-                                >
-                                    <svg
-                                        viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="w-5 h-5 fill-current"
-                                    >
-                                        <path
-                                            d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"
-                                        ></path>
-                                    </svg>
-                                </a>
-                                <a
-                                    rel="noopener noreferrer"
-                                    href="#"
-                                    title="Instagram"
-                                    class="flex items-center p-1"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 32 32"
-                                        fill="currentColor"
-                                        class="w-5 h-5 fill-current"
-                                    >
-                                        <path
-                                            d="M16 0c-4.349 0-4.891 0.021-6.593 0.093-1.709 0.084-2.865 0.349-3.885 0.745-1.052 0.412-1.948 0.959-2.833 1.849-0.891 0.885-1.443 1.781-1.849 2.833-0.396 1.020-0.661 2.176-0.745 3.885-0.077 1.703-0.093 2.244-0.093 6.593s0.021 4.891 0.093 6.593c0.084 1.704 0.349 2.865 0.745 3.885 0.412 1.052 0.959 1.948 1.849 2.833 0.885 0.891 1.781 1.443 2.833 1.849 1.020 0.391 2.181 0.661 3.885 0.745 1.703 0.077 2.244 0.093 6.593 0.093s4.891-0.021 6.593-0.093c1.704-0.084 2.865-0.355 3.885-0.745 1.052-0.412 1.948-0.959 2.833-1.849 0.891-0.885 1.443-1.776 1.849-2.833 0.391-1.020 0.661-2.181 0.745-3.885 0.077-1.703 0.093-2.244 0.093-6.593s-0.021-4.891-0.093-6.593c-0.084-1.704-0.355-2.871-0.745-3.885-0.412-1.052-0.959-1.948-1.849-2.833-0.885-0.891-1.776-1.443-2.833-1.849-1.020-0.396-2.181-0.661-3.885-0.745-1.703-0.077-2.244-0.093-6.593-0.093zM16 2.88c4.271 0 4.781 0.021 6.469 0.093 1.557 0.073 2.405 0.333 2.968 0.553 0.751 0.291 1.276 0.635 1.844 1.197 0.557 0.557 0.901 1.088 1.192 1.839 0.22 0.563 0.48 1.411 0.553 2.968 0.072 1.688 0.093 2.199 0.093 6.469s-0.021 4.781-0.099 6.469c-0.084 1.557-0.344 2.405-0.563 2.968-0.303 0.751-0.641 1.276-1.199 1.844-0.563 0.557-1.099 0.901-1.844 1.192-0.556 0.22-1.416 0.48-2.979 0.553-1.697 0.072-2.197 0.093-6.479 0.093s-4.781-0.021-6.48-0.099c-1.557-0.084-2.416-0.344-2.979-0.563-0.76-0.303-1.281-0.641-1.839-1.199-0.563-0.563-0.921-1.099-1.197-1.844-0.224-0.556-0.48-1.416-0.563-2.979-0.057-1.677-0.084-2.197-0.084-6.459 0-4.26 0.027-4.781 0.084-6.479 0.083-1.563 0.339-2.421 0.563-2.979 0.276-0.761 0.635-1.281 1.197-1.844 0.557-0.557 1.079-0.917 1.839-1.199 0.563-0.219 1.401-0.479 2.964-0.557 1.697-0.061 2.197-0.083 6.473-0.083zM16 7.787c-4.541 0-8.213 3.677-8.213 8.213 0 4.541 3.677 8.213 8.213 8.213 4.541 0 8.213-3.677 8.213-8.213 0-4.541-3.677-8.213-8.213-8.213zM16 21.333c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333zM26.464 7.459c0 1.063-0.865 1.921-1.923 1.921-1.063 0-1.921-0.859-1.921-1.921 0-1.057 0.864-1.917 1.921-1.917s1.923 0.86 1.923 1.917z"
-                                        ></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="py-6 text-sm text-center dark:text-gray-400">
-                    © 2024 Parmazip. All rights reserved.
-                </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="fill-current"
+                        >
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                            />
+                        </svg>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/company/parmazip/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            class="fill-current"
+                        >
+                            <path
+                                d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5m7 2a5 5 0 00-5 5 5 5 0 005 5 5 5 0 005-5 5 5 0 00-5-5m0 8a3 3 0 01-3-3 3 3 0 013-3 3 3 0 013 3 3 3 0 01-3 3m4.5-8.5A1.5 1.5 0 0016.5 5 1.5 1.5 0 0015 6.5 1.5 1.5 0 0016.5 8 1.5 1.5 0 0018 6.5z"
+                            />
+                        </svg>
+                    </a>
+                </nav>
             </footer>
+        </div>
+
+        <div class="dark:bg-gray-800 dark:text-gray-100 my-30">
+            <div class="py-6 text-sm text-center dark:text-gray-400">
+                © 2024 Parmazip. All rights reserved.
+            </div>
         </div>
     </div>
 </template>
@@ -713,9 +510,9 @@ export default {
         });
 
         useHead({
-            title: "EasyJoey",
+            title: "Parmazip",
             description:
-                "EasyJoey is the first and only local-first health records management system.",
+                "Parmazip provides a Telehealth App for Pharmacists in Canada.",
             link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
             meta: [
                 {
