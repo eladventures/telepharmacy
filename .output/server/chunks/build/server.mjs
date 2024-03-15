@@ -642,7 +642,7 @@ const _routes = [
     meta: __nuxt_page_meta || {},
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect,
-    component: () => import('./index-B-ON-vAK.mjs').then((m) => m.default || m)
+    component: () => import('./index-BXLPnu52.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -959,7 +959,8 @@ const plugins = [
   components_plugin_KR1HBZs4kY
 ];
 const layouts = {
-  default: () => import('./default-CP8pNANq.mjs').then((m) => m.default || m)
+  "default copy": () => import('./default copy-DQp1VKy3.mjs').then((m) => m.default || m),
+  default: () => import('./default-CTaEH2Yn.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
