@@ -2,9 +2,9 @@
     <div class="bg-white">
         <!-- HERO PANEL -->
         <section class="bg-white">
-            <div class="dark:bg-violet-400">
+            <div>
                 <div
-                    class="container flex flex-col items-center px-4 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 text-gray-900"
+                    class="container flex flex-col items-center px-4 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 text-gray-900"
                 >
                     <!-- logo-center -->
                     <div class="logo-container">
@@ -15,16 +15,14 @@
                         />
                     </div>
                     <!-- title -->
-                    <!-- <p class="text-xl sm:mb-12 xl:max-w-3xl dark:text-gray-900 font-inter">Designed for Canadian Pharmacy</p> -->
+
                     <h1
-                        class="font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter"
+                        class="font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl font-inter"
                     >
                         Supercharge your workflows with Telepharmacy AI.
                     </h1>
 
-                    <p
-                        class="mt-5 text-2xl sm:mb-12 xl:max-w-3xl dark:text-gray-900 font-inter"
-                    >
+                    <p class="mt-5 text-2xl sm:mb-12 xl:max-w-3xl font-inter">
                         Make minor ailment consultations more efficient with
                         Parmazip— the first AI-powered Telepharmacy tool that
                         gets you out of the admin work and more onto patient
@@ -39,9 +37,9 @@
         </section>
 
         <section>
-            <div class="dark:bg-violet-400"></div>
+            <div></div>
             <video
-                class="max-w-6xl mx-auto mt-5 lg:mt-5 dark:bg-gray-500 border-4 border-gray-700"
+                class="max-w-6xl mx-auto mt-5 lg:mt-5 border-4 border-gray-700"
                 controls
                 autoplay
                 loop
@@ -60,9 +58,7 @@
             <!-- 3 Descriptions -->
             <!-- CARDS HERE -->
 
-            <div
-                class="max-w-7xl mx-auto dark:bg-gray-800 dark:text-gray-100 text-gray-800"
-            >
+            <div class="max-w-7xl mx-auto text-gray-800">
                 <div class="flex flex-col md:flex-row justify-center mt-4">
                     <!--Card 1  -->
                     <div class="mx-5 w-full md:w-1/3 card card-compact w-96">
@@ -121,7 +117,7 @@
         </section>
 
         <!-- Mobile video -->
-        <section class="dark:bg-gray-800 dark:text-gray-100">
+        <section>
             <div
                 class="container max-w-xl p-6 py-12 mx-auto mt-20 space-y-24 lg:px-8 lg:max-w-7xl"
             >
@@ -129,7 +125,7 @@
                     <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                         <div class="lg:col-start-2">
                             <h3
-                                class="text-2xl font-bold tracking-tight sm:text-5xl dark:text-gray-50"
+                                class="text-2xl font-bold tracking-tight sm:text-5xl"
                             >
                                 Patient-focused care with minor ailments AI
                             </h3>
@@ -139,7 +135,7 @@
                                     <div class="flex"></div>
                                     <div>
                                         <p
-                                            class="text-xl font-medium leading-6 text-gray-700 dark:text-gray-50 font-inter"
+                                            class="text-xl font-medium leading-6 text-gray-700 font-inter"
                                         >
                                             With Parmazip AI bot for minor
                                             ailments, your patients can book
@@ -159,7 +155,7 @@
                                         rel="noopener noreferrer"
                                         href="https://docs.google.com/forms/d/e/1FAIpQLScW0Y_HX0KdZWMICk3EHOoQxHj0pl5TKR6s4tQK1IBTiN2tEQ/viewform"
                                         target="_blank"
-                                        class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900 bg-red-400 text-white"
+                                        class="px-8 py-3 text-lg font-semibold rounded bg-red-400 text-white"
                                         >Join the Waitlist</a
                                     >
                                 </div>
@@ -169,7 +165,7 @@
                             class="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1"
                         >
                             <video
-                                class="mx-auto rounded-3xl shadow-lg dark:bg-gray-500"
+                                class="mx-auto rounded-3xl shadow-lg"
                                 width="450"
                                 height="auto"
                                 controls
@@ -190,12 +186,12 @@
             </div>
         </section>
 
-        <div class="dark:bg-violet-400">
+        <div>
             <div
-                class="container flex flex-col items-center px-4 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 text-gray-900"
+                class="container flex flex-col items-center px-4 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 text-gray-900"
             >
                 <h1
-                    class="font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter"
+                    class="font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl font-inter"
                 >
                     How it works
                 </h1>
@@ -252,12 +248,12 @@
 
         <!-- What happens -->
 
-        <div class="dark:bg-violet-400">
+        <div>
             <div
-                class="container flex flex-col items-center px-4 mt-10 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 dark:text-gray-900 text-gray-900"
+                class="container flex flex-col items-center px-4 mt-10 mx-auto text-center lg:pb-8 md:py-32 md:px-10 lg:px-32 text-gray-900"
             >
                 <h1
-                    class="font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl dark:text-gray-900 font-inter"
+                    class="font-bold text-6xl leadi sm:text-5xl xl:max-w-4xl font-inter"
                 >
                     What happens when you use telehealth in your pharmacy?
                 </h1>
@@ -348,7 +344,7 @@
         </section>
 
         <!-- talk to trista -->
-        <section class="dark:bg-gray-800 dark:text-gray-100 bg-red-200 mt-20">
+        <section class="bg-red-200 mt-20">
             <div
                 class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl"
             >
@@ -356,7 +352,7 @@
                     <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                         <div class="lg:col-start-2">
                             <h3
-                                class="text-2xl font-bold tracking-tight sm:text-5xl dark:text-gray-50"
+                                class="text-2xl font-bold tracking-tight sm:text-5xl"
                             >
                                 Can't wait?<br />
                                 Let's have coffee.
@@ -367,7 +363,7 @@
                                     <div class="flex"></div>
                                     <div>
                                         <h4
-                                            class="text-lg font-medium leading-6 dark:text-gray-50"
+                                            class="text-lg font-medium leading-6"
                                         >
                                             One of our co-founders, Trista,
                                             roams around Ontario to talk with
@@ -394,7 +390,7 @@
                                         rel="noopener noreferrer"
                                         href="https://calendly.com/parmazip-trista/talk"
                                         target="_blank"
-                                        class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900 bg-red-400 text-white"
+                                        class="px-8 py-3 text-lg font-semibold rounded bg-red-400 text-white"
                                         >Talk to Trista</a
                                     >
                                 </div>
@@ -406,7 +402,7 @@
                             <img
                                 src="../assets/images/parmazip-trista.png"
                                 alt=""
-                                class="mx-auto dark:bg-gray-500"
+                                class="mx-auto"
                             />
                         </div>
                     </div>
@@ -414,19 +410,15 @@
             </div>
         </section>
 
-        <!-- OTHERS -->
-
         <!-- FOOTER -->
 
-        <!-- FOOTER -->
-
-        <div class="dark:bg-gray-800 dark:text-gray-100 my-30">
+        <div class="my-30">
             <footer class="footer items-center p-4 text-neutral-content px-40">
                 <aside class="items-center grid-flow-col">
                     <img
                         src="../assets/images/parmazip-logo-long.png"
                         alt="Your Logo"
-                        class="object-contain h-10 mt-1 w-auto dark:text-default-400"
+                        class="object-contain h-10 mt-1 w-auto"
                     />
                     <!-- <p>EMPOWERING COMMUNITY PHARMACIES THROUGH TECHNOLOGY</p> -->
                 </aside>
@@ -484,8 +476,8 @@
             </footer>
         </div>
 
-        <div class="dark:bg-gray-800 dark:text-gray-100 my-30">
-            <div class="py-6 text-sm text-center dark:text-gray-400">
+        <div class="my-30">
+            <div class="py-6 text-sm text-center">
                 © 2024 Parmazip. All rights reserved.
             </div>
         </div>
@@ -497,7 +489,7 @@
 import { useHead } from "#app";
 import { definePageMeta } from "#imports";
 import GenericPanel from "~/components/commons/GenericPanel";
-import ogBanner from "../assets/images/nuxtwind-daisy-og-banner.jpg";
+import ogBanner from "../assets/images/parmazip-banner.png";
 
 export default {
     name: "Hero",

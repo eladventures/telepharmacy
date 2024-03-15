@@ -632,17 +632,28 @@ const wrapInKeepAlive = (props, children) => {
 function toArray(value) {
   return Array.isArray(value) ? value : [value];
 }
+const __nuxt_page_meta$1 = {
+  layout: "default"
+};
 const __nuxt_page_meta = {
   layout: "default"
 };
 const _routes = [
+  {
+    name: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.name) ?? "index copy",
+    path: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.path) ?? "/index%20copy",
+    meta: __nuxt_page_meta$1 || {},
+    alias: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.alias) || [],
+    redirect: __nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.redirect,
+    component: () => import('./index copy-CPBA3SXD.mjs').then((m) => m.default || m)
+  },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "index",
     path: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.path) ?? "/",
     meta: __nuxt_page_meta || {},
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect,
-    component: () => import('./index-BXLPnu52.mjs').then((m) => m.default || m)
+    component: () => import('./index-B4WY4y8p.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1254,8 +1265,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-2fBbYuZA.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./error-500-2skRzZ7n.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-DsZBzGZ8.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./error-500-CmAXEfvH.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));

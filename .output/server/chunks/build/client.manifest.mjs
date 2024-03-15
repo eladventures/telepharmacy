@@ -4,7 +4,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "error-404.F2NnLVK6.js",
+    "file": "error-404.Bqqho5GP.js",
     "src": "../node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -23,7 +23,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "error-500.DJjl60LE.js",
+    "file": "error-500.DoPQhjEJ.js",
     "src": "../node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -42,7 +42,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "entry.CZ93ACx7.js",
+    "file": "entry.B0PudwwN.js",
     "src": "../node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
     "dynamicImports": [
@@ -63,12 +63,12 @@ const client_manifest = {
     "prefetch": true,
     "preload": true
   },
-  "_parmazip-logo-long.754eDIac.js": {
+  "_parmazip-logo-long.FOh2Z0hU.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "parmazip-logo-long.754eDIac.js",
+    "file": "parmazip-logo-long.FOh2Z0hU.js",
     "imports": [
       "../node_modules/nuxt/dist/app/entry.js"
     ],
@@ -82,12 +82,12 @@ const client_manifest = {
     "prefetch": true,
     "mimeType": "image/png"
   },
-  "_parmazip-logo.B6xjR9f8.js": {
+  "_parmazip-logo.CQZCbLKu.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "parmazip-logo.B6xjR9f8.js",
+    "file": "parmazip-logo.CQZCbLKu.js",
     "imports": [
       "../node_modules/nuxt/dist/app/entry.js"
     ],
@@ -101,12 +101,99 @@ const client_manifest = {
     "prefetch": true,
     "mimeType": "image/png"
   },
-  "assets/images/nuxtwind-daisy-og-banner.jpg": {
+  "_parmazip-trista.DHagWZ0h.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "parmazip-trista.DHagWZ0h.js",
+    "imports": [
+      "../node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "parmazip-banner.BnREyAgI.png",
+      "parmazip-tele-video.DJVfjk6l.mp4",
+      "parmazip-mobile-video.giQZBO4i.mp4",
+      "parmazip-how-1.CmSgZ3rQ.png",
+      "parmazip-how-2.G29zQtNc.png",
+      "parmazip-how-3.DlL1HD1V.png",
+      "parmazip-benefit-1.BBRZu5xB.png",
+      "parmazip-benefit-2.COWsLIFy.png",
+      "parmazip-benefit-3.mC0rMkgd.png",
+      "parmazip-benefit-4.CEABMCKp.png",
+      "parmazip-trista.BdhNVSJu.png"
+    ]
+  },
+  "parmazip-banner.BnREyAgI.png": {
+    "file": "parmazip-banner.BnREyAgI.png",
     "resourceType": "image",
     "prefetch": true,
-    "mimeType": "image/jpeg",
-    "file": "nuxtwind-daisy-og-banner.C8-CIcPr.jpg",
-    "src": "assets/images/nuxtwind-daisy-og-banner.jpg"
+    "mimeType": "image/png"
+  },
+  "parmazip-tele-video.DJVfjk6l.mp4": {
+    "file": "parmazip-tele-video.DJVfjk6l.mp4",
+    "resourceType": "video",
+    "prefetch": true
+  },
+  "parmazip-mobile-video.giQZBO4i.mp4": {
+    "file": "parmazip-mobile-video.giQZBO4i.mp4",
+    "resourceType": "video",
+    "prefetch": true
+  },
+  "parmazip-how-1.CmSgZ3rQ.png": {
+    "file": "parmazip-how-1.CmSgZ3rQ.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "parmazip-how-2.G29zQtNc.png": {
+    "file": "parmazip-how-2.G29zQtNc.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "parmazip-how-3.DlL1HD1V.png": {
+    "file": "parmazip-how-3.DlL1HD1V.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "parmazip-benefit-1.BBRZu5xB.png": {
+    "file": "parmazip-benefit-1.BBRZu5xB.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "parmazip-benefit-2.COWsLIFy.png": {
+    "file": "parmazip-benefit-2.COWsLIFy.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "parmazip-benefit-3.mC0rMkgd.png": {
+    "file": "parmazip-benefit-3.mC0rMkgd.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "parmazip-benefit-4.CEABMCKp.png": {
+    "file": "parmazip-benefit-4.CEABMCKp.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "parmazip-trista.BdhNVSJu.png": {
+    "file": "parmazip-trista.BdhNVSJu.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "assets/images/parmazip-banner.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "parmazip-banner.BnREyAgI.png",
+    "src": "assets/images/parmazip-banner.png"
   },
   "assets/images/parmazip-benefit-1.png": {
     "resourceType": "image",
@@ -195,11 +282,11 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "default copy.g3q61QPE.js",
+    "file": "default copy.CK3crSXB.js",
     "src": "layouts/default copy.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_parmazip-logo.B6xjR9f8.js",
+      "_parmazip-logo.CQZCbLKu.js",
       "../node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -208,11 +295,11 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "default.BgelTctj.js",
+    "file": "default.CWqXLvbO.js",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_parmazip-logo-long.754eDIac.js",
+      "_parmazip-logo-long.FOh2Z0hU.js",
       "../node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -221,110 +308,56 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "exclude-route.Bph08pUl.js",
+    "file": "exclude-route.Baa-c9Nk.js",
     "src": "middleware/exclude-route.js",
     "isDynamicEntry": true,
     "imports": [
       "../node_modules/nuxt/dist/app/entry.js"
     ]
   },
+  "pages/index copy.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "index copy.sYsFevfU.js",
+    "src": "pages/index copy.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "../node_modules/nuxt/dist/app/entry.js",
+      "_parmazip-trista.DHagWZ0h.js",
+      "_parmazip-logo.CQZCbLKu.js",
+      "_parmazip-logo-long.FOh2Z0hU.js"
+    ],
+    "css": []
+  },
+  "index copy.USlPyfBu.css": {
+    "file": "index copy.USlPyfBu.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "index.C4stSA3m.js",
+    "file": "index.BX2knzzg.js",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "../node_modules/nuxt/dist/app/entry.js",
-      "_parmazip-logo.B6xjR9f8.js",
-      "_parmazip-logo-long.754eDIac.js"
+      "_parmazip-trista.DHagWZ0h.js",
+      "_parmazip-logo.CQZCbLKu.js",
+      "_parmazip-logo-long.FOh2Z0hU.js"
     ],
-    "css": [],
-    "assets": [
-      "nuxtwind-daisy-og-banner.C8-CIcPr.jpg",
-      "parmazip-tele-video.DJVfjk6l.mp4",
-      "parmazip-mobile-video.giQZBO4i.mp4",
-      "parmazip-how-1.CmSgZ3rQ.png",
-      "parmazip-how-2.G29zQtNc.png",
-      "parmazip-how-3.DlL1HD1V.png",
-      "parmazip-benefit-1.BBRZu5xB.png",
-      "parmazip-benefit-2.COWsLIFy.png",
-      "parmazip-benefit-3.mC0rMkgd.png",
-      "parmazip-benefit-4.CEABMCKp.png",
-      "parmazip-trista.BdhNVSJu.png"
-    ]
+    "css": []
   },
-  "index.fUNn0L6j.css": {
-    "file": "index.fUNn0L6j.css",
+  "index.VrQyR0aD.css": {
+    "file": "index.VrQyR0aD.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
-  },
-  "nuxtwind-daisy-og-banner.C8-CIcPr.jpg": {
-    "file": "nuxtwind-daisy-og-banner.C8-CIcPr.jpg",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/jpeg"
-  },
-  "parmazip-tele-video.DJVfjk6l.mp4": {
-    "file": "parmazip-tele-video.DJVfjk6l.mp4",
-    "resourceType": "video",
-    "prefetch": true
-  },
-  "parmazip-mobile-video.giQZBO4i.mp4": {
-    "file": "parmazip-mobile-video.giQZBO4i.mp4",
-    "resourceType": "video",
-    "prefetch": true
-  },
-  "parmazip-how-1.CmSgZ3rQ.png": {
-    "file": "parmazip-how-1.CmSgZ3rQ.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "parmazip-how-2.G29zQtNc.png": {
-    "file": "parmazip-how-2.G29zQtNc.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "parmazip-how-3.DlL1HD1V.png": {
-    "file": "parmazip-how-3.DlL1HD1V.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "parmazip-benefit-1.BBRZu5xB.png": {
-    "file": "parmazip-benefit-1.BBRZu5xB.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "parmazip-benefit-2.COWsLIFy.png": {
-    "file": "parmazip-benefit-2.COWsLIFy.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "parmazip-benefit-3.mC0rMkgd.png": {
-    "file": "parmazip-benefit-3.mC0rMkgd.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "parmazip-benefit-4.CEABMCKp.png": {
-    "file": "parmazip-benefit-4.CEABMCKp.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
-  },
-  "parmazip-trista.BdhNVSJu.png": {
-    "file": "parmazip-trista.BdhNVSJu.png",
-    "resourceType": "image",
-    "prefetch": true,
-    "mimeType": "image/png"
   }
 };
 
